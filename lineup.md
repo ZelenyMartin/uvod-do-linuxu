@@ -37,12 +37,12 @@ počítačích Apple.
 ## Předpoklady:
 
 Prerekvizitou workshopu je základní IT přehled. Měly byste bezpečně znát pojmy
-jako _soubor_ , _adresář_ a mít pořádek a přehled v adresářové struktuře ve
+jako _soubor_, _adresář_ a mít pořádek a přehled v adresářové struktuře ve
 vašem domovském adresáři.
 
 Uživatelé Linuxu a MacOS speciální požadavky řešit nemusí, ale pro uživatele
 Windows je nezbytné mít nejaktuálnější updatované Windows 10, které již
-podporují **WSL 2** ( _Windows Subsystem for Linux_ verze _2_ ). Také bude
+podporují **WSL 2** (_Windows Subsystem for Linux_ verze _2_). Také bude
 potřeba mít k operačními systému Windows 10 administrátorský přístup (možnost
 instalovat programy).
 
@@ -55,7 +55,7 @@ startovací čáru, na které začneme.
   * Povíme si něco o výhodách práce v příkazové řádce
   * Naučíme se spolehlivě procházet adresářovou strukturu, vytvářet adresáře, přesouvat kopírovat soubory. Budeme znát pojmy jako _absolutní a relativní cesta_
   * Ukážeme si typické příklady práce v příkazové řádce, se kterými uživatel Linuxu přichází do styku
-  * Představíme si výhody a rychlost zpracování textových textových souborů
+  * Představíme si výhody a rychlost zpracování textových souborů
   * Některé činnosti si zautomatizujeme
 
 ## Co s sebou:
