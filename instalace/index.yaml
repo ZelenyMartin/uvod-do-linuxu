@@ -1,0 +1,6 @@
+title: Instalace
+link: instalace
+lessons:
+  - title: Instalace WSL
+    link: instalace-wsl
+    brief: Nejjedodušší způsob jak pracovat v Linuxu, pokud používáte Windows
