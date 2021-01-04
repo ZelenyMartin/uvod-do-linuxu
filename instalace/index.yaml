@@ -4,3 +4,6 @@ lessons:
   - title: Instalace WSL
     link: instalace-wsl
     brief: Nejjedodušší způsob jak pracovat v Linuxu, pokud používáte Windows
+  - title: Historie
+    link: historie
+    brief: Rychlá exkurze do historie příkazové řádky v systémech UNIX a GNU/Linux

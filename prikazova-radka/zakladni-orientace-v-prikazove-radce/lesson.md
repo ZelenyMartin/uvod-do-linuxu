@@ -1,9 +1,9 @@
 Pokud už před sebou vidíme spuštěné okno s terminálem, řekneme si něco málo o čem to vlastně budeme mluvit.
 
-## Terminál == konzole == příkazová řádka
-Ano, všechny tyto výrazy budeme považovat za synonyma. V angličtině se jedná analogicky o výrazy: _Terminal_, _Console_ a _Command Line_. Poslední výraz se často využívá ve spojení _Command Line Interface_, zkráceně _CLI_.
+## Terminál == konzole == příkazová řádka == shell
+Tyto výrazy mají k sobě velmi blízko a budeme je považovat za synonyma. V angličtině se jedná analogicky o výrazy: _Terminal_, _Console_ a _Command Line_ (často ve spojení _Command Line Interface_, zkráceně _CLI_). _Shell_ je označení typu programů pracujících jako interpret příkazové řádky. Konkrétně _Bash_ bývá častým linuxovým shellem.
 
-Terminál je program realizující textové vstupně/výstupní rozhraní s počítačem. Jednoduše řečeno počítači na klávesnici zadáme příkaz v podobě textu ukončený klávesou _Enter_. A výstupem bude text s výsledkem příkazu, který nám počítač vypíše.
+Terminál realizuje textové vstupně/výstupní rozhraní s počítačem. Jednoduše řečeno počítači na klávesnici zadáme příkaz v podobě textu ukončený klávesou _Enter_. A výstupem bude text s výsledkem příkazu, který nám počítač vypíše.
 
 ## Prompt
 První text, který v okně terminálu vidíme je tzv. _prompt_ (anglické slovo, které znamená _výzva_, _pobídka_). V _promptu_ nám operační systém sděluje nějaké základní důležité informace, abychom je měli vždy na očích. Formát _promptu_ není pevně dán a různé distribuce Linuxu a MacOS zde mohou vypisovat různé informace. Stejně tak si můžeme _prompt_ nastavit sami tak, aby nám vyhovoval. Nejčastěji je zde uživatelské jméno přihlášeného uživatele, název počítače a pracovní adresář (popř. celá cesta), kde se uživatel nachází. Znak `~` (tilda) je zástupný symbol pro náš domovský adresář.
@@ -32,7 +32,7 @@ $ ls -l
 $ ls -la
 ```
 
-Příkaz `ls` vypíše seznam souborů a adresářů v aktuálním pracovním adresáři (`l`i`s`t). Jedná se o jeden z nejpoužívanějších příkazů při práci v příkazové řádce. Pokud se nám nelíbí, že se obsah vypsal vedle sebe, ale chtěli ho bychom viděl raději pod sebou, použijeme _parametr_ `-l` (_long_), který nám navíc vypíše spoustu další užitečných informací.
+Příkaz `ls` vypíše seznam souborů a adresářů v aktuálním pracovním adresáři (_list_). Jedná se o jeden z nejpoužívanějších příkazů při práci v příkazové řádce. Pokud se nám nelíbí, že se obsah vypsal vedle sebe, ale chtěli ho bychom viděl raději pod sebou, použijeme _parametr_ `-l` (_long_), který nám navíc vypíše spoustu další užitečných informací.
 
 Parametr `-a` (_all_) navíc vypíše i takové podivné věci jako `.` (tečka) a `..` (dvě tečky). To jsou podobně jako `~` další zástupné symboly a značí
 
@@ -65,6 +65,8 @@ Rozlišení absolutní a relativní cesty ve velice jednoduché
 Cesta je hierarchická posloupnost adresářů na disku. Lomítko `/` se používá i na oddělení názvů těch adresářů. Základní rozdíly oproti Windows jsou ty, že Windows používá jako oddělovač zpětné lomítko `\` a na začátku absolutní cesty má název diskové jednotky, např. `C:\` nebo `D:\`. Linux toto nerozlišuje. Začátek je vždy jen jeden: `/` a diskové jednotky mohou být napojeny hierarchicky někam za toto lomítko.
 
 Jak to přesně funguje se zatím nemusíte trápit. Budeme pracovat výhradně v našem domovském adresáři.
+
+Když jsme si řekli, že _absolutní cesta_ začíná začátkem našeho kompletního hierarchického stromu adresářů (lomítkem `/`), je nutné zmínit, že _relativní cesta_ začíná našim pracovním adresářem.
 
 
 ## Procházení adresářů
