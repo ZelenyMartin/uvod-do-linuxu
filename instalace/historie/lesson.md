@@ -17,7 +17,7 @@ Kromě _WSL_ je možnost na počítač nainstalovat Linux přímo ve formě něk
 ## Distribuce a grafická prostředí
 Distribuce je kompletní linuxový operační systém, který si můžete stáhnout ve formě ISO obrazu bootovacího flash disku, rozběhnout na počítači a nainstalovat. Distribuce nabízí kromě jádra Linux a podpůrných nástrojů GNU mnoho programů ve formě balíčků (např. Firefox, Thunderbird, VLC, Gimp, Audacity). Různé distribuce ze sebe navzájem vychází nebo alespoň sdílí stejný balíčkovací systém. Podle nejčastěji používaných balíčkovacích systémů můžeme rozlišit Debian-based distribuce ([Debian](https://www.debian.org/), [Ubuntu](https://ubuntu.com/), [Linux Mint](https://linuxmint.com/)) a RPM-based distribuce ([Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux), [CentOS](https://www.centos.org/), [Fedora](https://getfedora.org/), [openSUSE](https://www.opensuse.org/)).
 
-V neposlední řadě každá distribuce často nabízí více grafických prostředí ([Gnome 3](https://www.gnome.org/), [KDE Plasma 5](https://kde.org/), [Xfce](https://xfce.org/), [MATE](https://mate-desktop.org/), [Cinnamon](https://cinnamon-spices.linuxmint.com/), [LXDE](http://www.lxde.org/), [LXQt](http://www.lxde.org/)).
+V neposlední řadě každá distribuce často nabízí více grafických prostředí ([Gnome 3](https://www.gnome.org/), [KDE Plasma 5](https://kde.org/), [Xfce](https://xfce.org/), [MATE](https://mate-desktop.org/), [Cinnamon](https://cinnamon-spices.linuxmint.com/), [LXDE](http://www.lxde.org/), [LXQt](https://lxqt-project.org/)).
 
 
 ## Proč používat příkazovou řádku?
