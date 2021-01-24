@@ -4,3 +4,21 @@ lessons:
   - title: Základní orientace v příkazové řádce
     link: zakladni-orientace-v-prikazove-radce
     brief: Jak napsat první příkazy a jak se v příkazové řádce orientovat
+  - title: Operace se soubory a adresáři
+    link: operace-se-soubory-a-adresari
+    brief: Vytváření, mazání, kopírování a přesun souborů a adresářů
+  - title: Manuálové stránky
+    link: manualove-stranky
+    brief: Kde hledat nápovědu
+  - title: Prohlížení textových souborů
+    link: prohlizeni-textovych-souboru
+    brief: O textu to všechno je
+  - title: Absolutní minimum editoru vim
+    link: absolutni-minimum-editoru-vim
+    brief: Mocný textový editor v linuxovém terminálu
+  - title: Specifikace cesty pomocí glob
+    link: specifikace-cesty-pomoci-glob
+    brief: ... a hledání souborů
+  - title: Zpracování textu
+    link: zpracovani-textu
+    brief: O textu to všechno je 2

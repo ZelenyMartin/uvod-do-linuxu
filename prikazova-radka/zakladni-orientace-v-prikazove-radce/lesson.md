@@ -1,12 +1,7 @@
-Pokud už před sebou vidíme spuštěné okno s terminálem, řekneme si něco málo o čem to vlastně budeme mluvit.
-
-## Terminál == konzole == příkazová řádka == shell
-Tyto výrazy mají k sobě velmi blízko a budeme je považovat za synonyma. V angličtině se jedná analogicky o výrazy: _Terminal_, _Console_ a _Command Line_ (často ve spojení _Command Line Interface_, zkráceně _CLI_). _Shell_ je označení typu programů pracujících jako interpret příkazové řádky. Konkrétně _Bash_ bývá častým linuxovým shellem.
-
-Terminál realizuje textové vstupně/výstupní rozhraní s počítačem. Jednoduše řečeno počítači na klávesnici zadáme příkaz v podobě textu ukončený klávesou _Enter_. A výstupem bude text s výsledkem příkazu, který nám počítač vypíše.
+Pokud už před sebou vidíme spuštěné okno s terminálem, řekneme si co si v něm můžeme přečíst a hlavě co do něj můžeme napsat.
 
 ## Prompt
-První text, který v okně terminálu vidíme je tzv. _prompt_ (anglické slovo, které znamená _výzva_, _pobídka_). V _promptu_ nám operační systém sděluje nějaké základní důležité informace, abychom je měli vždy na očích. Formát _promptu_ není pevně dán a různé distribuce Linuxu a MacOS zde mohou vypisovat různé informace. Stejně tak si můžeme _prompt_ nastavit sami tak, aby nám vyhovoval. Nejčastěji je zde uživatelské jméno přihlášeného uživatele, název počítače a pracovní adresář (popř. celá cesta), kde se uživatel nachází. Znak `~` (tilda) je zástupný symbol pro náš domovský adresář.
+První text, který v okně terminálu vidíme je tzv. _prompt_ (anglické slovo, které znamená _výzva_, _pobídka_). V _promptu_ nám operační systém sděluje nějaké základní důležité informace, abychom je měli vždy na očích. Formát _promptu_ není pevně dán a různé distribuce Linuxu a MacOS zde mohou vypisovat různé informace. Stejně tak si později můžeme _prompt_ nastavit sami tak, aby nám vyhovoval. Nejčastěji je zde uživatelské jméno přihlášeného uživatele, název počítače a pracovní adresář (popř. celá cesta), kde se uživatel nachází. Znak `~` (tilda) je zástupný symbol pro náš domovský adresář.
 
 
 ## Nejdůležitější klávesy
@@ -44,6 +39,8 @@ Pro úplnost dodám, že parametr `ls -a` vypíše i soubory a adresáře začí
 ### Parametry == argumenty
 Nyní jsme si ukázali, že můžeme chování nějakého příkazu upravit pomocí _parametrů_. Slova _parametry_ a _argumenty_ budeme opět považovat za synonyma. Pokud chceme zkombinovat parametry `-l` a `-a` příkazu `ls` ušetříme pár znaků zápisem `ls -la`. Na pořadí parametrů v tomto případě nezáleží, tzn. funguje i `ls -al`.
 
+Tyto nejjednodušší jednopísmenné parametry příkazů se uvozují pomlčkou/minusem a jedná se opět o konvenci napříč všemi příkazy a programy v linuxové příkazové řádce.
+
 
 ## Absolutní a relativní cesta
 
@@ -62,13 +59,41 @@ Rozlišení absolutní a relativní cesty ve velice jednoduché
 * Začíná-li cesta lomítkem, jedná se o absolutní cestu
 * Nezačíná-li cesta lomítkem, jedná se o relativní cestu
 
-Cesta je hierarchická posloupnost adresářů na disku. Lomítko `/` se používá i na oddělení názvů těch adresářů. Základní rozdíly oproti Windows jsou ty, že Windows používá jako oddělovač zpětné lomítko `\` a na začátku absolutní cesty má název diskové jednotky, např. `C:\` nebo `D:\`. Linux toto nerozlišuje. Začátek je vždy jen jeden: `/` a diskové jednotky mohou být napojeny hierarchicky někam za toto lomítko.
+Cesta je hierarchická posloupnost adresářů na disku. Lomítko `/` se používá i na oddělení názvů těchto adresářů. Základní rozdíly oproti Windows jsou ty, že Windows používá jako oddělovač zpětné lomítko `\` a na začátku absolutní cesty má název diskové jednotky, např. `C:\` nebo `D:\`. Linux toto nerozlišuje. Začátek je vždy jen jeden: `/` a diskové jednotky mohou být napojeny hierarchicky někam za toto lomítko.
 
 Jak to přesně funguje se zatím nemusíte trápit. Budeme pracovat výhradně v našem domovském adresáři.
 
 Když jsme si řekli, že _absolutní cesta_ začíná začátkem našeho kompletního hierarchického stromu adresářů (lomítkem `/`), je nutné zmínit, že _relativní cesta_ začíná našim pracovním adresářem.
 
+Uvedeme si pár příkladů:
+* `~` relativní cesta k našemu domovskému adresáři
+* `/home/martin` absolutní cesta k domovskému adresáři uživatele `martin`
+* `..` relativní cesta k nadřazenému adresáři
+* `Dokumenty` relativní cesta k adresáři `Dokumenty` v našem pracovním adresáři
+* `~/Dokumenty` relativní cesta k adresáři `Dokumenty` v našem domovském adresáři
+* `Dokumenty/faktury` delší ukázka cesty
+* `Dokumenty/faktury/2021` ještě delší ukázka cesty
+
 
 ## Procházení adresářů
 
 Absolutní a relativní cestu zmiňujeme z toho důvodu, že pro mnoho příkazů očekává cestu jako svůj parametr na příkazové řádce.
+
+Jedním z těchto příkazů je i již zmíněný příkaz `ls`, který zobrazí obsah adresáře na dané cestě. Tato cesta může být uvedena jak absolutní, tak relativní a pouze pokud není uvedena jako parametr příkazů, zobrazí se obsah pracovního adresáře.
+
+Samotnou změnu pracovního adresáře provedeme příkazem `cd` (_Change Directory_), kde jako parametr příkazu napíšeme cestu k adresáři kam se chceme přesunout. Pokud toto vynecháme a spustíme příkaz `cd` bez parametru, přesuneme se do našeho domovského adresáře (jako kdybychom napsali `cd ~`).
+
+Uvedeme si pár příkladů:
+* `cd Dokumenty` přesun do adresáře `Dokumenty`
+* `cd Dokumenty/faktury` přesun do adresáře `faktury`, který se nachází v adresáři `Dokumenty`
+* `cd ..` přesun do nadřazeného adresáře (přesun o jednu úroveň nahoru)
+* `cd ../..` přesun o dvě úrovně nahoru
+
+Všechny přesuny si můžeme kontrolovat tak, že se nám aktuální pracovní adresář zobrazí v _promptu_, popř. použijeme příkaz `pwd`.
+
+Zmíním ještě hezký tip, který nám pomůže, pokud uděláme v cestě chybu a pracovní adresář se nám změní na nějaký, který jsme nechtěli: pro přesun do adresáře, který byl našim předchozím pracovním adresářem napíšeme `cd -`.
+
+
+## Cvičení
+* Vyzkoušejte si samostatně příkazy `pwd`, `ls` a `cd`
+* Ověřte jak funguje šipka nahoru a tabulátor

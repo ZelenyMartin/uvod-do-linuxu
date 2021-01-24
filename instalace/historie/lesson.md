@@ -22,3 +22,8 @@ V neposlední řadě každá distribuce často nabízí více grafických prost�
 
 ## Proč používat příkazovou řádku?
 Ovládání přes příkazovou řádku je v každé linuxové distribuci téměř totožné. Kromě historického aspektu, že něco existuje desítky let a stále se používá je hlavní výhodou práce v příkazové řádce rychlost některých úkonů, malý objem přenášených dat a rychlá latence při vzdálené práci a automatizace činností ve formě skriptování.
+
+## Terminál == konzole == příkazová řádka == shell
+Tyto výrazy mají k sobě velmi blízko a budeme je považovat za synonyma. V angličtině se jedná analogicky o výrazy: _Terminal_, _Console_ a _Command Line_ (často ve spojení _Command Line Interface_, zkráceně _CLI_). _Shell_ je označení typu programů pracujících jako interpret příkazové řádky. Konkrétně _Bash_ bývá častým linuxovým shellem.
+
+Terminál realizuje textové vstupně/výstupní rozhraní s počítačem. Jednoduše řečeno počítači na klávesnici zadáme příkaz v podobě textu ukončený klávesou _Enter_. A výstupem bude text s výsledkem příkazu, který nám počítač vypíše.
