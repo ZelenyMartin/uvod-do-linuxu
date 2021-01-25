@@ -7,6 +7,13 @@ Příkazová řádka v podobě jakou používáme dnes v Linuxu vznikla na přel
 
 Později vznikl projekt GNU, který si dal za cíl nabídnou unixové prostředí ve formě _free software_ (dnes se jedná o _open source_ model a svobodné licence). V kombinaci s jádrem Linux vzniká GNU/Linux, který se velmi rozšířil ve formě mnoha distribucí.
 
+
+## Terminál == konzole == příkazová řádka == shell
+Tyto výrazy mají k sobě velmi blízko a budeme je považovat za synonyma. V angličtině se jedná analogicky o výrazy: _Terminal_, _Console_ a _Command Line_ (často ve spojení _Command Line Interface_, zkráceně _CLI_). _Shell_ je označení typu programů pracujících jako interpret příkazové řádky. Často používaný linuxový _shell_ je například _Bash_. Jedná se o program, který pochopí, co na příkazovou řádku napíšeme, podle toho se zachová a vypíše nám výsledek.
+
+Terminál realizuje textové vstupně/výstupní rozhraní s počítačem. Jednoduše řečeno počítači na klávesnici zadáme příkaz v podobě textu ukončený klávesou _Enter_. A výstupem bude text s výsledkem příkazu, který nám počítač vypíše.
+
+
 ## Jak vypadá Linux
 Je důležité si uvědomit, že dnešní Linux rozhodně není pouze příkazová řádka. Je však mnoho případů, kdy rozhraní terminálu zcela dostačuje a je i vhodnější. Linux bývá často nasazován na servery, u kterých chcete, aby pracovaly samy a bez nutnosti zásahu. Připojování k serverům se často řeší dálkové přes internet, kde textové rozhraní Linux je rychlejší a pohodlnější než režim vzdálené plochy u Windows serveru.
 
@@ -14,8 +21,9 @@ Linux dále pracuje ve spoustě elektroniky téměř skrytě bez přímé uživa
 
 Kromě _WSL_ je možnost na počítač nainstalovat Linux přímo ve formě některé linuxové distribuce. Pokud nechceme instalovat Linux přímo _"na železo"_ např. v režimu _dual-boot_ s Windows, můžeme využít virtualizaci (např. _VirtualBox_) a Linux nainstalovat do virtuálního počítače běžícího jako program v operačním systému.
 
+
 ## Distribuce a grafická prostředí
-Distribuce je kompletní linuxový operační systém, který si můžete stáhnout ve formě ISO obrazu bootovacího flash disku, rozběhnout na počítači a nainstalovat. Distribuce nabízí kromě jádra Linux a podpůrných nástrojů GNU mnoho programů ve formě balíčků (např. Firefox, Thunderbird, VLC, Gimp, Audacity). Různé distribuce ze sebe navzájem vychází nebo alespoň sdílí stejný balíčkovací systém. Podle nejčastěji používaných balíčkovacích systémů můžeme rozlišit Debian-based distribuce ([Debian](https://www.debian.org/), [Ubuntu](https://ubuntu.com/), [Linux Mint](https://linuxmint.com/)) a RPM-based distribuce ([Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux), [CentOS](https://www.centos.org/), [Fedora](https://getfedora.org/), [openSUSE](https://www.opensuse.org/)).
+Distribuce je kompletní linuxový operační systém, který si můžete stáhnout ve formě ISO obrazu bootovacího flash disku, rozběhnout na počítači a nainstalovat. Distribuce nabízí kromě jádra Linux a podpůrných nástrojů GNU mnoho programů ve formě balíčků (např. Firefox, Thunderbird, LibreOffice, VLC, Gimp, Inkscape, Audacity). Různé distribuce ze sebe navzájem vychází nebo alespoň sdílí stejný balíčkovací systém. Podle nejčastěji používaných balíčkovacích systémů můžeme rozlišit Debian-based distribuce ([Debian](https://www.debian.org/), [Ubuntu](https://ubuntu.com/), [Linux Mint](https://linuxmint.com/)) a RPM-based distribuce ([Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux), [CentOS](https://www.centos.org/), [Fedora](https://getfedora.org/), [openSUSE](https://www.opensuse.org/)).
 
 V neposlední řadě každá distribuce často nabízí více grafických prostředí ([Gnome 3](https://www.gnome.org/), [KDE Plasma 5](https://kde.org/), [Xfce](https://xfce.org/), [MATE](https://mate-desktop.org/), [Cinnamon](https://cinnamon-spices.linuxmint.com/), [LXDE](http://www.lxde.org/), [LXQt](https://lxqt-project.org/)).
 
@@ -23,7 +31,3 @@ V neposlední řadě každá distribuce často nabízí více grafických prost�
 ## Proč používat příkazovou řádku?
 Ovládání přes příkazovou řádku je v každé linuxové distribuci téměř totožné. Kromě historického aspektu, že něco existuje desítky let a stále se používá je hlavní výhodou práce v příkazové řádce rychlost některých úkonů, malý objem přenášených dat a rychlá latence při vzdálené práci a automatizace činností ve formě skriptování.
 
-## Terminál == konzole == příkazová řádka == shell
-Tyto výrazy mají k sobě velmi blízko a budeme je považovat za synonyma. V angličtině se jedná analogicky o výrazy: _Terminal_, _Console_ a _Command Line_ (často ve spojení _Command Line Interface_, zkráceně _CLI_). _Shell_ je označení typu programů pracujících jako interpret příkazové řádky. Konkrétně _Bash_ bývá častým linuxovým shellem.
-
-Terminál realizuje textové vstupně/výstupní rozhraní s počítačem. Jednoduše řečeno počítači na klávesnici zadáme příkaz v podobě textu ukončený klávesou _Enter_. A výstupem bude text s výsledkem příkazu, který nám počítač vypíše.

@@ -9,7 +9,8 @@ Než se vrhneme na příkazy povíme si něco o velmi důležitých klávesách,
 
 * Enter - spuštění příkazu
 * Šipka nahoru - vyvolání předchozího příkazu (opakovaným stisknutím je možné procházet historii)
-* Tabulátor - doplňování příkazů nebo cesty
+* Tabulátor - doplňování příkazů nebo cesty (napíšeme část příkazu nebo cesty a tabulátor nám doplní zbytek)
+
 
 ## První příkazy
 **POZOR!** Symbol dolaru na začátku příkazu se do terminálu nepíše. Jedná se o všeobecně rozšířenou konvenci v psaní návodů a dokumentace, abychom odlišili, že se jedná o příkaz v terminálu.
@@ -44,7 +45,7 @@ Tyto nejjednodušší jednopísmenné parametry příkazů se uvozují pomlčkou
 
 ## Absolutní a relativní cesta
 
-Nejprve si zopakujeme si speciální symboly, které se nám mohou v cestě vyskytovat
+Nejprve si zopakujeme speciální symboly, které se nám mohou v cestě vyskytovat
 
 * `~` domovský adresář
 * `.` aktuální pracovní adresář
@@ -77,9 +78,9 @@ Uvedeme si pár příkladů:
 
 ## Procházení adresářů
 
-Absolutní a relativní cestu zmiňujeme z toho důvodu, že pro mnoho příkazů očekává cestu jako svůj parametr na příkazové řádce.
+Absolutní a relativní cestu zmiňujeme z toho důvodu, že mnoho příkazů očekává cestu jako svůj parametr na příkazové řádce.
 
-Jedním z těchto příkazů je i již zmíněný příkaz `ls`, který zobrazí obsah adresáře na dané cestě. Tato cesta může být uvedena jak absolutní, tak relativní a pouze pokud není uvedena jako parametr příkazů, zobrazí se obsah pracovního adresáře.
+Jedním z těchto příkazů je i již zmíněný příkaz `ls`, který umí zobrazit obsah adresáře na dané cestě. Tato cesta může být uvedena jak absolutní, tak relativní. Pouze pokud tento parametr není uveden, zobrazí se obsah pracovního adresáře.
 
 Samotnou změnu pracovního adresáře provedeme příkazem `cd` (_Change Directory_), kde jako parametr příkazu napíšeme cestu k adresáři kam se chceme přesunout. Pokud toto vynecháme a spustíme příkaz `cd` bez parametru, přesuneme se do našeho domovského adresáře (jako kdybychom napsali `cd ~`).
 
