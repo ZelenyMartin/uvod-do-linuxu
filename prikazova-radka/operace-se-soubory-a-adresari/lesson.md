@@ -11,7 +11,7 @@ Příkazem `touch` (dotknout) vytvoříme prázdný soubor. Prozatím si nemusí
 mkdir <adresář>
 ```
 
-Nabízí se nám i možnost vložit jako parametr celou delší cestu složenou z více adresářů. Pokud bychom však napsali např. `mkdir faktury/2021`, ale žádný adresář `faktury` bychom v pracovním adresáři neměli, nefungovalo by to. Tento nedostatek se však hravě opraví doplněním parametru `-p`.
+Podobně jako v předchozím příkladu můžeme vytvořit adresář pomocí příkazu `mkdir` (_Make Directory_). Nabízí se nám i možnost vložit jako parametr celou delší cestu složenou z více adresářů. Pokud bychom však napsali např. `mkdir faktury/2021`, ale žádný adresář `faktury` bychom v pracovním adresáři neměli, nefungovalo by to. Tento nedostatek se však hravě opraví doplněním parametru `-p`.
 
 ```shell
 mkdir -p <adresář>/<podadresář>
@@ -53,7 +53,7 @@ Poslední základní znalost práce se soubory a adresáři v linuxové příkaz
 cp <soubor> <cíl>
 ```
 
-Kopírování provádíme příkaze `cp`, který má dva povinné parametry a to, soubor, který chceme kopírovat a _kam_ to chceme nakopírovat (do jakého adresáře). 
+Kopírování provádíme příkaze `cp`, který má dva povinné parametry a to, soubor, který chceme kopírovat a _kam_ to chceme nakopírovat (do jakého adresáře).
 
 Alternativně funguje tento příkaz k vytvoření kopie souboru, pokud jako parametr _cíl_ není zvolen existující adresář, ale nový název souboru.
 

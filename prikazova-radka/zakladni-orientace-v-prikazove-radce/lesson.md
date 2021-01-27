@@ -43,6 +43,12 @@ Nyní jsme si ukázali, že můžeme chování nějakého příkazu upravit pomo
 Tyto nejjednodušší jednopísmenné parametry příkazů se uvozují pomlčkou/minusem a jedná se opět o konvenci napříč všemi příkazy a programy v linuxové příkazové řádce.
 
 
+## Jak _shell_ pozná co má spustit?
+V této části si také povíme co to vlastně jsou ty příkazy, které do příkazové řádky píšeme. Z pohledu linuxového shellu se totiž jedná o samostatné spustitelné programy, které se mohou doplnit o příslušné parametry a po spuštění něco udělají. A jak _shell_ pozná jestli to slovo, které v něm spustíme je název nějakého programu? Musí si ho totiž v počítači vyhledat.
+
+Takové vyhledávání programu je naštěstí docela rychlé, a jednoduché. V běžícím _shellu_ je definovaná tzn. _proměnná prostředí_ s názvem `PATH` a ta obsahuje absolutní cesty k adresářům, kde se v systému nachází spustitelné programy. Shell se automaticky podívá do všech těchto adresářů a první program, který vyhovuje hledanému názvu, spustí. Pro zájemce navíc dodám, že tyto cesty si můžeme zobrazit pomocí příkazu `echo $PATH` (jedná se o seznam absolutních cest oddělený dvojtečkou `:`).
+
+
 ## Absolutní a relativní cesta
 
 Nejprve si zopakujeme speciální symboly, které se nám mohou v cestě vyskytovat
