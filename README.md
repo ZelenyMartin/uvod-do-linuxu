@@ -13,7 +13,7 @@ vážně, že si ho už nainstaloval na svůj notebook. Znalosti jsou uplatnitel
 především pro uchazečky o práci v IT nebo pro aktivní uživatelky desktopových
 prostředí na Linuxu, které by rády pronikly do tajů příkazové řádky.
 
-Ať už hledáte práci v oblasti datové analýzy, webového vývoje nebo skiptování
+Ať už hledáte práci v oblasti datové analýzy, webového vývoje nebo skriptování
 automatizovaných testů, základní znalost práce na Linuxových serverech se vám
 může hodit.
 
@@ -30,7 +30,7 @@ nějakou podobu Linuxu na počítačích účastnic zprovoznit, aby si mohly
 prostředí pro procvičování znalostí „odnést domů". K tomu mohou uživatelé
 Windows 10 využít funkcionalitu _Windows Subsystem for Linux (WSL)_. Pokud
 přicházíte přímo s nainstalovaným Linuxem na notebooku, tento krok rovnou
-přeskočíte :-). Stejně jako Linux je i MacOS je operační systém _Unixového
+přeskočíte :-). Stejně jako Linux je i MacOS operační systém _Unixového
 typu_. Proto by většina příkazů probíraných na workshopu měla fungovat i na
 počítačích Apple.
 
