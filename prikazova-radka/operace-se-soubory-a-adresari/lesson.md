@@ -11,7 +11,7 @@ Příkazem `touch` (dotknout) vytvoříme prázdný soubor. Prozatím si nemusí
 mkdir <adresář>
 ```
 
-Podobně jako v předchozím příkladu můžeme vytvořit adresář pomocí příkazu `mkdir` (_Make Directory_). Nabízí se nám i možnost vložit jako parametr celou delší cestu složenou z více adresářů. Pokud bychom však napsali např. `mkdir faktury/2021`, ale žádný adresář `faktury` bychom v pracovním adresáři neměli, nefungovalo by to. Tento nedostatek se však hravě opraví doplněním parametru `-p`.
+Podobně jako v předchozím příkladu můžeme vytvořit adresář pomocí příkazu `mkdir` (Make Directory). Nabízí se nám i možnost vložit jako parametr celou delší cestu složenou z více adresářů. Pokud bychom však napsali např. `mkdir faktury/2021`, ale žádný adresář `faktury` bychom v pracovním adresáři neměli, nefungovalo by to. Tento nedostatek se však hravě opraví doplněním parametru `-p`.
 
 ```shell
 mkdir -p <adresář>/<podadresář>
@@ -24,12 +24,12 @@ mkdir -p <adresář>/<podadresář>
 rm <soubor>
 ```
 
-Prostě odstraníme soubor (_remove_). V některých prostředích se však může příkaz `rm` volat ve skutečnosti jako `rm -i`, kde se nám zobrazí otázka, jestli opravdu chceme tento příkaz odstranit a my na ni musíme odpovědět `y` (_yes_).
+Prostě odstraníme soubor (remove). V některých prostředích se však může příkaz `rm` volat ve skutečnosti jako `rm -i`, kde se nám zobrazí otázka, jestli opravdu chceme tento příkaz odstranit a my na ni musíme odpovědět `y` (yes).
 
 ```shell
 rmdir <prázdný adresář>
 ```
-Tímto odstraníme adresář (_remove directory_). Pozor - příkaz funguje pouze na prázdné adresáře. Je to taková pojistka, abychom si omylem neodstranili něco, čeho bychom litovali. Pokud se v adresáři, který chceme smazat něco nachází, musíme to smazat jako první.
+Tímto odstraníme adresář (remove directory). Pozor - příkaz funguje pouze na prázdné adresáře. Je to taková pojistka, abychom si omylem neodstranili něco, čeho bychom litovali. Pokud se v adresáři, který chceme smazat něco nachází, musíme to smazat jako první.
 
 ```shell
 rm -r <adresář se soubory>
@@ -42,7 +42,7 @@ Poslední věc z oblasti mazání souborů a adresářů je velmi silná kombina
 rm -rf
 ```
 
-Tento příkaz rekurzivně smaže vše co mu předhodíme a na nic se nás ptát nebude (`-f` znamená _force_)
+Tento příkaz rekurzivně smaže vše co mu předhodíme a na nic se nás ptát nebude (`-f` znamená force)
 
 Příkazy pro vytváření a mazání umí pracovat i s více parametry. Pokud chceme naráz vytvořit více souboru příkazem `touch` nebo více adresářů příkazem `mkdir`, můžeme jejich názvy naskládat jako parametry příkazové řádky za sebe spustit jedním stiskem klávesy _Enter_. Stejně funguje i jejich mazání pomocí `rm` či `rmdir`.
 
@@ -53,7 +53,7 @@ Poslední základní znalost práce se soubory a adresáři v linuxové příkaz
 cp <soubor> <cíl>
 ```
 
-Kopírování provádíme příkaze `cp`, který má dva povinné parametry a to, soubor, který chceme kopírovat a _kam_ to chceme nakopírovat (do jakého adresáře).
+Kopírování provádíme příkaze `cp`, který má dva povinné parametry a to, soubor, který chceme kopírovat a kam to chceme nakopírovat (do jakého adresáře).
 
 Alternativně funguje tento příkaz k vytvoření kopie souboru, pokud jako parametr _cíl_ není zvolen existující adresář, ale nový název souboru.
 
@@ -68,10 +68,10 @@ mv <zdroj> <cíl>
 ```
 
 Příkaz `mv` má dvě základní funkce:
-* Přesun souboru nebo adresáře do jiného adresáře (_move_), pokud je _cíl_ existující adresář
+* Přesun souboru nebo adresáře do jiného adresáře (move), pokud je cíl existující adresář
 * Přejmenování souboru nebo adresáře na cílové jméno
 
-U příkazů pro kopírování a přesun může být parametrů _co_ se má kopírovat více, jak poslední musí být vždy cílový adresář.
+U příkazů pro kopírování a přesun může být parametrů co se má kopírovat více, jak poslední musí být vždy cílový adresář.
 
 
 ## Jak to hezky zobrazit
@@ -81,41 +81,7 @@ tree
 
 Pokud se vám zdá že práce se soubory a adresáři je v prostředí příkazové řádky nesmírně nepřehledná věc, vyzkoušejte příkaz `tree`, který vám vytiskne obsah všech adresářů v nižších úrovních do přehledné stromové struktury.
 
-## Cvičení
-Dostali jste za úkol vytvořit ve vašem domovském adresáři adresář _data_, v něm podadresáře s názvy posledních tří let: _2021_, _2020_, _2019_. V každém adresáři vytvořte podadresáře pro každý kvartál: _Q1_, _Q2_, _Q3_, _Q4_.
-
-Obsah adresáře `data` má vypadat:
-
-```shell
-.
-├── 2019
-│   ├── Q1
-│   ├── Q2
-│   ├── Q3
-│   └── Q4
-├── 2020
-│   ├── Q1
-│   ├── Q2
-│   ├── Q3
-│   └── Q4
-└── 2021
-    ├── Q1
-    ├── Q2
-    ├── Q3
-    └── Q4
-```
-
-Váš šéf si rozmyslel, že nechce sledovat data po kvartálech, ale podle pololetí. Upravte strukturu na:
-
-```shell
-.
-├── 2019
-│   ├── H1
-│   └── H2
-├── 2020
-│   ├── H1
-│   └── H2
-└── 2021
-    ├── H1
-    └── H2
-```
+[[[ excs Cvičení
+- vytvareni
+- presouvani
+]]]
