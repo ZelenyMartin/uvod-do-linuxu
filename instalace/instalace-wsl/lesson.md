@@ -13,7 +13,7 @@ Budeme následovat oficiální návod na [webu Microsoftu](https://docs.microsof
 1. Restartujte počítač!
 1. Stáhněte s nainstalujte WSL update Linuxového jádra (Step 4)
 1. Nastavte WSL 2 jako výchozí verzi (Step 5)
-1. Nainstalujte linuxovou distribuci z Microsoft Store (např. Debian a kompletní distribuce, která je zároveň nejmenší z nabízených a stažení nebude trvat dlouho)
+1. Nainstalujte linuxovou distribuci z Microsoft Store (např. Debian je kompletní distribuce, která je zároveň nejmenší z nabízených a stažení nebude trvat dlouho)
 
     ![Instalace distribuce z Microsoft Store](assets/02_ms_store_debian_instalace.png){.fig .fig-100}
 
