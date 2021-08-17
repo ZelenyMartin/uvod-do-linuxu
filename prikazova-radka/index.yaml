@@ -10,15 +10,15 @@ lessons:
   - title: Manuálové stránky
     link: manualove-stranky
     brief: Kde hledat nápovědu
+  - title: Specifikace cesty
+    link: specifikace-cesty
+    brief: ... a hledání souborů
   - title: Prohlížení textových souborů
     link: prohlizeni-textovych-souboru
     brief: O textu to všechno je
   - title: Absolutní minimum editoru vim
     link: absolutni-minimum-editoru-vim
     brief: Mocný textový editor v linuxovém terminálu
-  - title: Specifikace cesty pomocí glob
-    link: specifikace-cesty-pomoci-glob
-    brief: ... a hledání souborů
   - title: Zpracování textu
     link: zpracovani-textu
     brief: O textu to všechno je 2
