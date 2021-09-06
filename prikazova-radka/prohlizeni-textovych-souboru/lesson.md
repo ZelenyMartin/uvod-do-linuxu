@@ -1,10 +1,10 @@
 Prozatím jsme pracovali s adresářovou strukturou a prázdnými soubory. Teď se podíváme jak prozkoumat obsah souboru.
 
 ## Stažení a prohlížení ukázkového souboru
-Jako ukázkový soubor si stáhneme zdrojový kód textu této lekce ve formátu Markdown. Budeme na tento soubor nahlížet jako na obyčejný textový soubor.
+Jako ukázkový soubor si stáhneme zdrojový kód textu předchozí lekce ve formátu Markdown. Budeme na tento soubor nahlížet jako na obyčejný textový soubor.
 
 ```shell
-$ wget https://raw.githubusercontent.com/ZelenyMartin/uvod-do-linuxu/master/prikazova-radka/prohlizeni-textovych-souboru/lesson.md
+$ wget https://raw.githubusercontent.com/ZelenyMartin/uvod-do-linuxu/master/prikazova-radka/specifikace-cesty/lesson.md
 ```
 
 Příkaz pro vypsání obsahu souboru se jmenuje _cat_.
@@ -92,3 +92,62 @@ Posledním hezkým nástrojem pro zobrazení souboru je program _less_. Tento p�
 $ less lesson.md
 ```
 
+## Další nejzákladnější příkazy nad soubory
+
+Umíme už vypsat celý soubor pomocí příkazu _cat_ a umíme vypsat začátek pomocí _head_ a konec díky _tail_. Nyní si ukážeme jak textový soubor prohledávat.
+
+K tomu nám poslouží program _grep_.
+
+```shell
+$ grep <co hledávám> <název souboru>
+```
+
+Grep budeme používat s dvěma hlavními parametry, a to jako první parametr hledaný řetězec a jako druhý parametr bude název souboru, který se má prohledávat. Program grep neumí jen prosté vyhledávání řetězců v textovém souboru. Jeho hlavní síla tkví ve využití regulárních výrazů. Jedná se však o pokročilou část, kterou nebudeme v úvodním kurzu probírat a zájemce odkážu na [kapitolu o využití regulární výrazů v Pythonu](https://kodim.cz/czechitas/progr2-python/python-pro-data-2/regularni-vyrazy).
+
+Při ukázce použití programu _grep_ se vrátíme ke zdrojovému kódu lekce ve formátu Markdown. Markdown formátování kapitol začíná vždy znakem _hash_ _#_ (a nadpis druhé úrovně je vyjádřen dvěma mřížkami _##_).
+
+```shell
+$ grep '##' lesson.md
+```
+
+Druhý příkaz, který si ukážeme je program _wc_. Za vtipnou zkratkou se skrývá Word Count. Zavoláme-li příkaz s název souboru, vypíše se nám 3 čísla. V manuálové stránce zjistíme, že se jedná po počet řádku, slov a velikost souboru v bytech. Velikost souboru ukazuje i příkaz _ls -l_. Místo trojice čísel je však vhodnější znát jen jednu konkrétní hodnotu. Nejčastěji se příkaz používá jako _wc -l_, které vypíše počet řádků.
+
+```shell
+$ wc lesson.md
+  88  414 3163 lesson.md
+```
+
+## Nejdůležitější znak v terminálu je |
+
+Pipe, roura neb svislítko je znak, který máte na anglické klávesnici v blízkosti Enteru (vlevo nebo nad Enterem). Upřímně si myslím, že pipe se používá v linuxovém terminálu tak často, že stojí za to se přeučit na anglickou klávesnici. Tento znak se v shellu používá na tajemnou konstrukci, která se popisuje jako "přesměrování standardního výstup jednoho programu na standardní vstup druhého programu".
+
+Většina příkazů, která akceptuje jako svůj parametr název souboru, totiž umí načítat text i ze standardního vstupu, který může vypsat jiný program na standardní výstup.
+
+Příklad vydá za tisíc slov
+
+```shell
+$ grep '##' lesson.md | wc -l
+4
+```
+
+Příkaz `grep '##' lesson.md` samotný by nám vypsal v tomto případě 4 řádky. Pokud tyto řádky pošleme "spočítat", `wc -l` nám vypíše číslo _4_.
+
+Zkusme to zkombinovat s tím co už známe. Vypiš první kapitolu:
+
+```shell
+$ grep '##' lesson.md | head -n 1
+## Specifikace cesty
+```
+
+Vypiš poslední kapitolu:
+
+```shell
+$ grep '##' lesson.md | tail -n 1
+## Příklady použití příkazu find
+```
+
+Kolik se v adresáři nachází souborů s příponou _.csv_?
+
+```shell
+$ ls *.csv | wc -l
+```

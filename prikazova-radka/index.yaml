@@ -12,13 +12,13 @@ lessons:
     brief: Kde hledat nápovědu
   - title: Specifikace cesty
     link: specifikace-cesty
-    brief: ... a hledání souborů
+    brief: Jak specifikovat více souborů naráz a jak soubory vyhledávat
   - title: Prohlížení textových souborů
     link: prohlizeni-textovych-souboru
-    brief: O textu to všechno je
+    brief: Obecná práce s textem v příkazové řádce
+  - title: Zpracování textu
+    link: zpracovani-textu
+    brief: Ukázka dávkových úprav textu
   - title: Absolutní minimum editoru vim
     link: absolutni-minimum-editoru-vim
     brief: Mocný textový editor v linuxovém terminálu
-  - title: Zpracování textu
-    link: zpracovani-textu
-    brief: O textu to všechno je 2
