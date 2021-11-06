@@ -18,7 +18,7 @@ Příkazem _sort_ si můžeme daný seznam jmen seřadit podle abecedy.
 $ sort names.txt
 ```
 
-Jak dosáhneme seřazení do Z do A? Hledej v manuálu.
+Jak dosáhneme seřazení od Z do A? Hledej v manuálu.
 
 ### Řazení čísel
 
@@ -95,7 +95,7 @@ Ulyatt
 Webster
 ```
 
-Velmi učený je u příkazu _uniq_ parametr _-c_ - vytiskne nám počet výskytů daného řádku. Můžeme si pak seznam pomocí tohoto čísla seřadit
+Velmi užitečný je u příkazu _uniq_ parametr _-c_ - vytiskne nám počet výskytů daného řádku. Můžeme si pak seznam pomocí tohoto čísla seřadit
 
 ```shell
 $ sort names.txt | uniq -c | sort -n | tail
@@ -230,7 +230,122 @@ $ sed -i 's/tým/team/' tymy.txt
 
 ## Řezání sloupců
 
-V této části si povíme něco co nejjednodušší možné práci s CSV soubory.
+V této části si povíme něco co nejjednodušší možné práci např. s CSV soubory. Pro ukázku využijeme pracovní data s předchozího cvičení.
+
+Pro vyřezávání sloupců slouží příkaz _cut_. Pro práci s CSV se nejčastěji využívá v kombinaci s parametry _-d_ udávající oddělovač polí v CSV a _-f_ (field) s číslem pole pro výřez.
+
+```shell
+$ cut -d ',' -f 1 u202.csv
+jméno
+Jana Zbořilová
+Lukáš Jurčík
+Pavel Horák
+Lukáš Jurčík
+Pavel Kysilka
+Kateřina Novotná
+Marie Krejcárková
+Vasil Lácha
+Alexey Opatrný
+Petr Valenta
+Miroslav Bednář
+Pavel Horák
+Ivana Dvořáková
+Lenka Jarošová
+Miroslav Bednář
+```
+
+Využijme pipe a vyextrahujme si dále pouze příjmení studentů
+
+```shell
+$ cut -d, -f1 u202.csv | cut -d' ' -f2
+jméno
+Zbořilová
+Jurčík
+Horák
+Jurčík
+Kysilka
+Novotná
+Krejcárková
+Lácha
+Opatrný
+Valenta
+Bednář
+Horák
+Dvořáková
+Jarošová
+Bednář
+```
+
+Hlavičky CSV souboru se zbavíme pomocí `tail -n +2`. Co to znamená a jak to funguje si ukážeme na řadě čísel:
+
+```shell
+$ seq 10 | head -n 1
+1
+```
+
+```shell
+$ seq 10 | head -n -1
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+```shell
+$ seq 10 | tail -n 1
+10
+```
+
+```shell
+$ seq 10 | tail -n +2
+2
+3
+4
+5
+6
+7
+8
+9
+10
+```
+
+Lze použít i příkaz `sed`. V jeho jazyce lze použít příkaz _d_ (delete), kterému předchází číslo řádku, které chceme ze vstupu smazat.
+
+```shell
+$ seq 10 | sed '1d'
+2
+3
+4
+5
+6
+7
+8
+9
+10
+```
+
+Výsledkem této části může být např. seřazený seznam příjmení studentů
+
+```shell
+$ cut -d, -f1 u202.csv | cut -d' ' -f2 | sed '1d' | sort | uniq
+Bednář
+Dvořáková
+Horák
+Jarošová
+Jurčík
+Krejcárková
+Kysilka
+Lácha
+Novotná
+Opatrný
+Valenta
+Zbořilová
+```
 
 [[[ excs Cvičení
 - history
@@ -238,4 +353,6 @@ V této části si povíme něco co nejjednodušší možné práci s CSV soubor
 
 ## Pokročilá práce s daty
 
-Nejpokročilejším nástrojem, který si dnes představíme je program _awk_.
+Nejpokročilejším nástrojem, který si dnes představíme je program _awk_. Z doposud představených nástrojů má nejdelší manuálovou stránku. Jedná se interpret programovacího jazyka, který je určen pro práci s tabulkovými daty. Nástroje jako _sed_ a _awk_ už jsou pokročilejší věci a jejich použití pro složité problémy nemusí být vždy nejlepší volba. Dnes jdou některé úkoly řešit snadněji pomocí jazyka Python a jeho knihovny Pandas.
+
+Výhoda _awk_ podobně jako programu _sed_ je ta, že pracuje jako filtr a využívá unixový způsob práce se standardním textovým vstupem a výstupem a jeho propojení rourami. Tím se plně integruje se všemi ostatními nástroji, které jsme prozatím probrali.
