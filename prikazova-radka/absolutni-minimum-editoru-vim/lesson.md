@@ -20,7 +20,7 @@ U vimu rozlišujeme 3 hlavní režimy práce:
     * Výchozí mód při spuštění VIMu
     * Vstup do editačního módu: klávesa _Esc_
 * INSERT mód
-    * Vkládání znaků do souboru
+    * Slouží ke vkládání znaků do souboru
     * Vstup do INSERT módu: klávesa _i_
     * Ukončení INSERT módu: klávesa _Esc_
 * Příkazový mód
@@ -39,115 +39,99 @@ $ vim
 ```
 
 ```
-  1                                                                             
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                              VIM - Vi IMproved                                
-~                                                                               
-~                               version 8.2.3512                                
-~                           by Bram Moolenaar et al.                            
-~                      Modified by <bugzilla@redhat.com>                        
-~                 Vim is open source and freely distributable                   
-~                                                                               
-~                        Help poor children in Uganda!                          
-~                type  :help iccf<Enter>       for information                  
-~                                                                               
-~                type  :q<Enter>               to exit                          
-~                type  :help<Enter>  or  <F1>  for on-line help                 
-~                type  :help version8<Enter>   for version info                 
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-utf-8 unix  [No Name]                                                   0/1   1
+  1                                                        
+~                                                          
+~                                                          
+~                    VIM - Vi IMproved                     
+~                                                          
+~                     version 8.2.3512                     
+~                 by Bram Moolenaar et al.                 
+~            Modified by <bugzilla@redhat.com>             
+~       Vim is open source and freely distributable        
+~                                                          
+~              Help poor children in Uganda!               
+~      type  :help iccf<Enter>       for information       
+~                                                          
+~      type  :q<Enter>               to exit               
+~      type  :help<Enter>  or  <F1>  for on-line help      
+~      type  :help version8<Enter>   for version info      
+~                                                          
+~                                                          
+utf-8 unix  [No Name]                              0/1   1
 ```
 
 Pokud chceme v editoru něco napsat, zmáčkneme klávesu _i_, která nás přepne do INSERT módu. V tu chvíli klávesy dělají to co od nich očekáváme - text se zobrazuje v okně editoru. Znak tilda _~_ zde znamená prázdný řádek.
 
 ```
-  1 Ahoj vime!                                                                  
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-utf-8 unix  [No Name] +                                                 1/1  11 
--- INSERT --                                                                   
+  1 Ahoj vime!                                             
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+utf-8 unix  [No Name] +                            1/1  11 
+-- INSERT --                                               
 ```
 
 Pokud jsme něco napsali, ale text nechceme ukládat do souboru, musíme VIM ukončit příkaze _:q!_, abychom dali najevo, že opravdu nechceme soubor ukládat.
 
 ```
-  1 Ahoj vime!                                                                  
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-utf-8 unix  [No Name] +                                                 1/1  10 
+  1 Ahoj vime!                                             
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+utf-8 unix  [No Name] +                            1/1  10 
 :q!
 ```
 
 V opačném případě musíme soubor uložit příkazem _:w <název souboru>_.
 
 ```
-  1 Ahoj vime!                                                                  
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-utf-8 unix  [No Name] +                                                 1/1  10 
+  1 Ahoj vime!                                             
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+~                                                          
+utf-8 unix  [No Name] +                            1/1  10 
 :w pozdrav.txt
 ```
 
@@ -185,4 +169,4 @@ Pro zájemce doporučuji vestavěný tutoriál
 $ vimtutor
 ```
 
-Pokud vás editor VIM zaujme a naučíte se s ním pracovat, odměnou vám bude mnohem vyšší rychlost úprav textových souborů, zdravější ergonomie práce na klávesnici a doživotní závislost na vimovském způsobu ovládání textového editoru :-).
+Pokud vás editor VIM zaujme a naučíte se s ním pracovat, odměnou vám bude mnohem vyšší rychlost úprav textových souborů, zdravější ergonomie práce na klávesnici a doživotní závislost na vimovském způsobu ovládání textového editoru 😄.
