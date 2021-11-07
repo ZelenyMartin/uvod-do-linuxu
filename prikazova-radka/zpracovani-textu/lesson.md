@@ -353,6 +353,71 @@ Zbořilová
 
 ## Pokročilá práce s daty
 
-Nejpokročilejším nástrojem, který si dnes představíme je program _awk_. Z doposud představených nástrojů má nejdelší manuálovou stránku. Jedná se interpret programovacího jazyka, který je určen pro práci s tabulkovými daty. Nástroje jako _sed_ a _awk_ už jsou pokročilejší věci a jejich použití pro složité problémy nemusí být vždy nejlepší volba. Dnes jdou některé úkoly řešit snadněji pomocí jazyka Python a jeho knihovny Pandas.
+Nejpokročilejším nástrojem, který si dnes představíme je program _awk_. Z doposud představených nástrojů má nejdelší manuálovou stránku. Jedná se interpret programovacího jazyka, který je určen pro práci s tabulkovými daty. Nástroje jako _sed_ a _awk_ už jsou pokročilejší věci, ale jejich použití pro složité problémy nemusí být vždy nejlepší volba. Dnes jdou některé úkoly řešit snadněji pomocí jazyka Python a jeho knihovny Pandas.
 
-Výhoda _awk_ podobně jako programu _sed_ je ta, že pracuje jako filtr a využívá unixový způsob práce se standardním textovým vstupem a výstupem a jeho propojení rourami. Tím se plně integruje se všemi ostatními nástroji, které jsme prozatím probrali.
+Výhoda _awk_ podobně jako programu _sed_ je však ta, že pracuje jako filtr a využívá unixový způsob práce se standardním textovým vstupem a výstupem a jeho propojení rourami. Tím se může plně integrovat se všemi ostatními nástroji, které jsme prozatím probrali.
+
+Pro následující ukázku si vezměme sloupeček čísel a příkazů, které nám vyprodukovalo předchozí cvičení
+
+```shell
+   1383 cd
+   1167 git
+    786 python
+    759 cat
+    398 gvim
+    313 vim
+    209 find
+    203 sudo
+    187 mv
+    168 ls
+```
+
+Tyto data jsou hezky zarovnány, aby se dobře četly, ale pokud bychom si chtěli sloupce vyříznout, tak příkaz _cut_ zde neuspěje. Jednotlivá pole totiž nejsou oddělena přesně jedním znakem.
+
+```shell
+$ awk '{print $1}' data.txt
+1383
+1167
+786
+759
+398
+313
+209
+203
+187
+168
+```
+
+```shell
+$ awk '{print $2}' data.txt
+cd
+git
+python
+cat
+gvim
+vim
+find
+sudo
+mv
+ls
+```
+
+Příklad použití jazyka _awk_ pro počítání s daty
+
+```shell
+$ awk 'BEGIN {sum = 0} {sum += $1} END {print sum}' data.txt
+5573
+```
+
+Vytiskni řádky pouze pro třípísmenné příkazy
+
+```shell
+$ awk 'length($2) == 3 {print $0}' data.txt
+   1167 git
+    759 cat
+    313 vim
+```
+
+Číslo uvozená znakem dolar _$_ značí příslušné políčko v řádku (čísluje se zde o 1). _$0_ znamená celý řádek.
+
+Důležité je vědět, že síla programů _sed_, _awk_ (a např. i _grep_) vyzní až s použitím regulárních výrazů. Nevadí pokud jste programem _awk_ spíše zmateni. Stačí si zapamatovat, že něco takového existuje. Programovací úsilí směřujte více např. k jazyku Python.

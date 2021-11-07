@@ -3,7 +3,7 @@ title: Zpracování souboru historie příkazů
 demand: 3
 ---
 
-Náš shell Bash ukládá všechny příkazy, které spouštíme do souboru `.bash_history` uložený v našem domovském adresáři. Využívá se např. pro příkaz _history_. Surový obsah si můžete zobrazit pomocí:
+Náš shell Bash ukládá všechny příkazy, které spouštíme do souboru `.bash_history` uložený v našem domovském adresáři. Využívá se např. pro příkaz _history_, který vypíše vše co jsme dříve do terminálu zadávali. Obsah souboru si můžete zobrazit pomocí:
 
 ```shell
 $ cat ~/.bash_history
