@@ -1,7 +1,7 @@
 Pokud už před sebou vidíme spuštěné okno s terminálem, řekneme si co si v něm můžeme přečíst a hlavě co do něj můžeme napsat.
 
 ## Prompt
-První text, který v okně terminálu vidíme je tzv. <term en="prompt" cs="výzva, pobídka">. V promptu nám operační systém sděluje nějaké základní důležité informace, abychom je měli vždy na očích. Formát promptu není pevně dán a různé distribuce Linuxu a MacOS zde mohou vypisovat různé informace. Stejně tak si později můžeme prompt nastavit sami tak, aby nám vyhovoval. Nejčastěji je zde uživatelské jméno přihlášeného uživatele, název počítače a pracovní adresář (popř. celá cesta), kde se uživatel nachází. Znak `~` (tilda) je zástupný symbol pro náš domovský adresář.
+První text, který v okně terminálu vidíme je tzv. _prompt_ (anglicky výzva, pobídka). V promptu nám operační systém sděluje nějaké základní důležité informace, abychom je měli vždy na očích. Formát promptu není pevně dán a různé distribuce Linuxu a MacOS zde mohou vypisovat různé informace. Stejně tak si později můžeme prompt nastavit sami tak, aby nám vyhovoval. Nejčastěji je zde uživatelské jméno přihlášeného uživatele, název počítače a pracovní adresář (popř. celá cesta), kde se uživatel nachází. Znak `~` (tilda) je zástupný symbol pro náš domovský adresář.
 
 
 ## Nejdůležitější klávesy
