@@ -1,17 +1,19 @@
 Procházet si svůj domovský adresář může být na začátku nuda, obzvláště, pokud v něm nic není. Naučíme se jak adresáře a soubory vytvářet, mazat, přesouvat a kopírovat
 
 ## Nové adresáře a prázdné soubory
+Následující ukázky příkazů obsahují ukázku parametru mezi `<` a `>`. To je opět konvence. Při zkoušení příkazů si tam doplňte sami vhodný název.
+
 ```shell
 $ touch <soubor>
 ```
 
-Příkazem `touch` (dotknout) vytvoříme prázdný soubor. Prozatím si nemusíme lámat hlavu k čemu nám je vytvářet prázdné soubory. Potřebujeme je jen, abychom viděli i něco jiného než adresáře. Za podivným názvem příkazu `touch` stojí jeho hlavní funkcionalita, a to aktualizace _timestamp_ (časového údaje posledního přístupu k souboru) existujícího souboru. Toto uvádím jen pro úplnost a více se tím zabývat nemusíme.
+Příkazem `touch` (dotknout) vytvoříme prázdný soubor. Prozatím si nemusíme lámat hlavu k čemu nám je vytvářet prázdné soubory. Potřebujeme je jen, abychom viděli i něco jiného než adresáře. Za podivným názvem příkazu `touch` stojí jeho hlavní funkcionalita, a to aktualizace _timestamp_ (časového údaje posledního přístupu k souboru). Toto uvádím jen pro úplnost a více se tím zabývat nemusíme.
 
 ```shell
 $ mkdir <adresář>
 ```
 
-Podobně jako v předchozím příkladu můžeme vytvořit adresář pomocí příkazu `mkdir` (Make Directory). Nabízí se nám i možnost vložit jako parametr celou delší cestu složenou z více adresářů. Pokud bychom však napsali např. `mkdir faktury/2021`, ale žádný adresář `faktury` bychom v pracovním adresáři neměli, nefungovalo by to. Tento nedostatek se však hravě opraví doplněním parametru `-p`.
+Podobně jako v předchozím příkladu můžeme vytvořit adresář pomocí příkazu `mkdir` (make directory). Nabízí se nám i možnost vložit jako parametr celou delší cestu složenou z více adresářů. Pokud bychom však napsali např. `mkdir faktury/2021`, ale žádný adresář `faktury` bychom v pracovním adresáři neměli, nefungovalo by to. Tento nedostatek se však hravě opraví doplněním přepínače `-p`.
 
 ```shell
 $ mkdir -p <adresář>/<podadresář>
@@ -39,7 +41,7 @@ Jistě se vám taková pojistka zdá dost omezující. Vyřešit se to dá pří
 Poslední věc z oblasti mazání souborů a adresářů je velmi silná kombinace:
 
 ```shell
-$ rm -rf
+$ rm -rf <adresář se soubory>
 ```
 
 Tento příkaz rekurzivně smaže vše co mu předhodíme a na nic se nás ptát nebude (`-f` znamená force)
@@ -79,7 +81,7 @@ U příkazů pro kopírování a přesun může být parametrů co se má kopír
 $ tree
 ```
 
-Pokud se vám zdá že práce se soubory a adresáři je v prostředí příkazové řádky nesmírně nepřehledná věc, vyzkoušejte příkaz `tree`, který vám vytiskne obsah všech adresářů v nižších úrovních do přehledné stromové struktury.
+Pokud se vám zdá že práce se soubory a adresáři je v prostředí příkazové řádky nesmírně nepřehledná věc, vyzkoušejte příkaz `tree`, který vám vytiskne obsah všech adresářů v nižších úrovních do přehledné stromové struktury. Pokud příkaz `tree` ve svém prostředí nemáte, budete si ho muset doinstalovat.
 
 [[[ excs Cvičení
 - vytvareni

@@ -1,5 +1,5 @@
 ---
-title: Vyzoušení příkazů
+title: Vyzkoušení příkazů
 demand: 1
 ---
 

@@ -1,5 +1,5 @@
 title: Úvod do Linuxu
-publish: false
+publish: true
 brief: Workshop přibližující základy práce v linuxové příkazové řádce
 chapters:
   - instalace
