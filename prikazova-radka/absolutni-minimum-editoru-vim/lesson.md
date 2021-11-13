@@ -4,7 +4,7 @@ Většina příkazů, které jsme si ukázali pracovala v režimu standardního 
 
 Výjimku v tomto měly nástroje _less_ a _man_, které zabraly celé dostupné okno terminálu a zobrazily na něj soubor nebo manuálovou stránku. Program _less_ nám však dovoloval pouze soubor prohlížet. Pokud bychom potřebovali nějaký soubor upravit, popř. vytvořit nový soubor s nějakým obsahem, budeme potřebovat textový editor.
 
-V profesionálním světe linuxové příkazové řádky se pro tyto případy nejčastěji používá editor _vim_. Důležité je vědět, že editor [VIM](https://www.vim.org/) se svým ovládáním významně liší od běžných textových editorů, se kterými jste se doposud nejspíše setkali při psaní a editaci nějakého kódu (např. [Visual Studio Code](https://code.visualstudio.com/), [Atom](https://atom.io/) nebo [Sublime Text](https://atom.io/))
+V profesionálním světe linuxové příkazové řádky se pro tyto případy nejčastěji používá editor _vim_. Důležité je vědět, že editor [VIM](https://www.vim.org/) se svým ovládáním významně liší od běžných textových editorů, se kterými jste se doposud nejspíše setkali při psaní a editaci nějakého kódu (např. [Visual Studio Code](https://code.visualstudio.com/), [Atom](https://atom.io/) nebo [Sublime Text](https://www.sublimetext.com/))
 
 Editor VIM je profesionální nástroj a je nutné věnovat určitý čas naučení se s ním pracovat. Odměnou nám bude mnohem efektivnější a rychlejší editace textových souborů (požadované operace lze vykonat mnohem rychleji za použití menšího počtu úhozů). Výhody vznikají pouze při psaní 10 prsty bez sledování klávesnice.
 
@@ -60,7 +60,7 @@ $ vim
 utf-8 unix  [No Name]                              0/1   1
 ```
 
-Pokud chceme v editoru něco napsat, zmáčkneme klávesu _i_, která nás přepne do INSERT módu. V tu chvíli klávesy dělají to co od nich očekáváme - text se zobrazuje v okně editoru. Znak tilda _~_ zde znamená prázdný řádek.
+Pokud chceme v editoru něco napsat, zmáčkneme klávesu _i_, která nás přepne do INSERT módu. V tu chvíli klávesy dělají to co od nich očekáváme - text se zobrazuje v okně editoru. Znak tilda `~` zde znamená prázdný řádek.
 
 ```
   1 Ahoj vime!                                             
@@ -85,7 +85,7 @@ utf-8 unix  [No Name] +                            1/1  11
 -- INSERT --                                               
 ```
 
-Pokud jsme něco napsali, ale text nechceme ukládat do souboru, musíme VIM ukončit příkaze _:q!_, abychom dali najevo, že opravdu nechceme soubor ukládat.
+Pokud jsme něco napsali, ale text nechceme ukládat do souboru, musíme VIM ukončit příkazem _:q!_, abychom dali najevo, že opravdu nechceme soubor ukládat.
 
 ```
   1 Ahoj vime!                                             

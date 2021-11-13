@@ -8,11 +8,11 @@ Pro další práci si stáhneme nová pracovní data
 $ wget https://kodim.cz/czechitas/uvod-do-linuxu/prikazova-radka/zpracovani-textu/assets/names.txt
 ```
 
-Využijme známé příkazy, abychom se s daty seznámili: _head_, _tail_, _wc -l_, _cat_, _less_
+Využijme známé příkazy, abychom se s daty seznámili: `head`, `tail`, `wc -l`, `cat`, `less`
 
 ### Řazení příkazem sort
 
-Příkazem _sort_ si můžeme daný seznam jmen seřadit podle abecedy.
+Příkazem `sort` si můžeme daný seznam jmen seřadit podle abecedy.
 
 ```shell
 $ sort names.txt
@@ -22,7 +22,7 @@ Jak dosáhneme seřazení od Z do A? Hledej v manuálu.
 
 ### Řazení čísel
 
-Pro další ukázku si vygenerujeme soubor deseti čísel pomocí příkazu _seq_
+Pro další ukázku si vygenerujeme soubor deseti čísel pomocí příkazu `seq`
 
 ```shell
 $ seq 10 > cisla.txt
@@ -39,7 +39,7 @@ $ cat cisla.txt
 10
 ```
 
-Zamícháme si řádky pomocí příkazu _shuf_.
+Zamícháme si řádky pomocí příkazu `shuf`.
 
 ```shell
 $ shuf cisla.txt > nahodna_cisla.txt
@@ -95,7 +95,7 @@ Ulyatt
 Webster
 ```
 
-Velmi užitečný je u příkazu _uniq_ parametr _-c_ - vytiskne nám počet výskytů daného řádku. Můžeme si pak seznam pomocí tohoto čísla seřadit
+Velmi užitečný je u příkazu `uniq` parametr `-c` - vytiskne nám počet výskytů daného řádku. Můžeme si pak seznam pomocí tohoto čísla seřadit
 
 ```shell
 $ sort names.txt | uniq -c | sort -n | tail
@@ -121,7 +121,7 @@ $ wget https://kodim.cz/czechitas/uvod-do-linuxu/prikazova-radka/zpracovani-text
 
 ### tr
 
-Jednoduchý příkaz _tr_ (translate) slouží k nahrazování znaků z množiny prvního parametru znaky z druhé množiny.
+Jednoduchý příkaz `tr` (translate) slouží k nahrazování znaků z množiny prvního parametru znaky z druhé množiny.
 
 Náhrada mezer za tečky
 
@@ -139,7 +139,7 @@ Taylor.Murphy
 Owen.Vass
 ```
 
-Smazání určitých znaků dosáhneme použitím parametru _-d_ následovaným množinou znaků, které chceme smazat (v tomto případě mezera).
+Smazání určitých znaků dosáhneme použitím parametru `-d` následovaným množinou znaků, které chceme smazat (v tomto případě mezera).
 
 ```shell
 $ cat fullnames.txt | tr -d ' '
@@ -155,7 +155,7 @@ TaylorMurphy
 OwenVass
 ```
 
-Program _tr_ má více užitečných funkcí, např. náhrada všech velkých písmen malými.
+Program `tr` má více užitečných funkcí, např. náhrada všech velkých písmen malými.
 
 ```shell
 $ cat fullnames.txt | tr '[[:upper:]]' '[[:lower:]]'
@@ -171,7 +171,7 @@ taylor murphy
 owen vass
 ```
 
-Nejdůležitější je si uvědomit, že program _tr_ funguje podle jednotlivých znaků. Pro další ukázku si vytvoříme testovací soubor s tímto obsahem:
+Nejdůležitější je si uvědomit, že program `tr` funguje podle jednotlivých znaků. Pro další ukázku si vytvoříme testovací soubor s tímto obsahem:
 
 ```
 tým 1
@@ -197,9 +197,9 @@ tým C
 
 ### sed
 
-Předchozí příklad použití programu _tr_ je svou funkcionalitou omezen tím, že nahrazuje vždy pouze jeden znak. Co když budeme potřebovat v našich datech nahradit celé slovo jiným slovem? V tom nám pomůže jedna z funkcí pokročilejšího nástroje - programu _sed_ (Stream EDitor).
+Předchozí příklad použití programu `tr` je svou funkcionalitou omezen tím, že nahrazuje vždy pouze jeden znak. Co když budeme potřebovat v našich datech nahradit celé slovo jiným slovem? V tom nám pomůže jedna z funkcí pokročilejšího nástroje - programu `sed` (Stream EDitor).
 
-Program _sed_ využívá něco jako vlastní komplexní jazyk, díky kterému je ovšem i velmi mocný a lze jej využít na spoustu úkolů. My si ukážeme nejjednodušší příklad, a to využití příkazu _s_ (substitute).
+Program `sed` využívá něco jako vlastní komplexní jazyk, díky kterému je ovšem i velmi mocný a lze jej využít na spoustu úkolů. My si ukážeme velmi častý příklad, a to využití příkazu _s_ (substitute).
 
 Budeme-li chtít nahradit v datech `fullnames.txt` mezeru za tečku pomocí sedu, napíšeme:
 
@@ -221,7 +221,7 @@ První znak je požadovaný příkaz _s_ (substitute), následuje oddělovač lo
 
 Lepší příklad bude nahrazení celého slova _tým_ za anglické _team_
 
-**Pozor!** Parametr _-i_ příkazu _sed_ přepíše soubor se kterým pracuje (in-place).
+**Pozor!** Parametr `-i` příkazu `sed` přepíše soubor se kterým pracuje (in-place).
 
 ```shell
 $ sed -i 's/tým/team/' tymy.txt
@@ -232,7 +232,7 @@ $ sed -i 's/tým/team/' tymy.txt
 
 V této části si povíme něco o zjednoduššení možné práce např. s CSV soubory. Pro ukázku využijeme pracovní data s předchozího cvičení.
 
-Pro vyřezávání sloupců slouží příkaz _cut_. Pro práci s CSV se nejčastěji využívá v kombinaci s parametry _-d_ udávající oddělovač polí v CSV a _-f_ (field) s číslem pole pro výřez.
+Pro vyřezávání sloupců slouží příkaz `cut`. Pro práci s CSV se nejčastěji využívá v kombinaci s parametry `-d` (delimiter) udávající oddělovač polí v CSV a `-f` (field) s číslem pole pro výřez.
 
 ```shell
 $ cut -d ',' -f 1 u202.csv
@@ -353,9 +353,9 @@ Zbořilová
 
 ## Pokročilá práce s daty
 
-Nejpokročilejším nástrojem, který si dnes představíme je program _awk_. Z doposud představených nástrojů má nejdelší manuálovou stránku. Jedná se interpret programovacího jazyka, který je určen pro práci s tabulkovými daty. Nástroje jako _sed_ a _awk_ už jsou pokročilejší věci, ale jejich použití pro složité problémy nemusí být vždy nejlepší volba. Dnes jdou některé úkoly řešit snadněji pomocí jazyka Python a jeho knihovny Pandas.
+Nejpokročilejším nástrojem, který si dnes představíme je program `awk`. Z doposud představených nástrojů má nejdelší manuálovou stránku. Jedná se interpret programovacího jazyka, který je určen pro práci s tabulkovými daty. Nástroje jako `sed` a `awk` už jsou pokročilejší věci, ale jejich použití pro složité problémy nemusí být vždy nejlepší volba. Dnes jdou některé úkoly řešit snadněji pomocí jazyka Python a jeho knihovny Pandas.
 
-Výhoda _awk_ podobně jako programu _sed_ je však ta, že pracuje jako filtr a využívá unixový způsob práce se standardním textovým vstupem a výstupem a jeho propojení rourami. Tím se může plně integrovat se všemi ostatními nástroji, které jsme prozatím probrali.
+Výhoda `awk` podobně jako programu `sed` je však ta, že pracuje jako filtr a využívá unixový způsob práce se standardním textovým vstupem a výstupem a jeho propojení rourami. Tím se může plně integrovat se všemi ostatními nástroji, které jsme prozatím probrali.
 
 Pro následující ukázku si vezměme sloupeček čísel a příkazů, které nám vyprodukovalo předchozí cvičení
 
@@ -372,7 +372,7 @@ Pro následující ukázku si vezměme sloupeček čísel a příkazů, které n
     168 ls
 ```
 
-Tyto data jsou hezky zarovnány, aby se dobře četly, ale pokud bychom si chtěli sloupce vyříznout, tak příkaz _cut_ zde neuspěje. Jednotlivá pole totiž nejsou oddělena přesně jedním znakem.
+Tyto data jsou hezky zarovnány, aby se dobře četly, ale pokud bychom si chtěli sloupce vyříznout, tak příkaz `cut` zde neuspěje. Jednotlivá pole totiž nejsou oddělena přesně jedním znakem.
 
 ```shell
 $ awk '{print $1}' data.txt
@@ -402,7 +402,7 @@ mv
 ls
 ```
 
-Příklad použití jazyka _awk_ pro počítání s daty
+Příklad použití jazyka `awk` pro počítání s daty
 
 ```shell
 $ awk 'BEGIN {sum = 0} {sum += $1} END {print sum}' data.txt
@@ -420,4 +420,4 @@ $ awk 'length($2) == 3 {print $0}' data.txt
 
 Číslo uvozená znakem dolar _$_ značí příslušné políčko v řádku (čísluje se zde od 1). _$0_ znamená celý řádek.
 
-Důležité je vědět, že síla programů _sed_, _awk_ (a např. i _grep_) vyzní až s použitím regulárních výrazů. Nevadí pokud jste programem _awk_ spíše zmateni. Stačí si zapamatovat, že něco takového existuje. Programovací úsilí směřujte více např. k jazyku Python.
+Důležité je vědět, že síla programů `sed`, `awk` (a např. i `grep`) vyzní až s použitím regulárních výrazů. Nevadí pokud jste programem `awk` spíše zmateni. Stačí si zapamatovat, že něco takového existuje. Programovací úsilí směřujte více např. k jazyku Python.

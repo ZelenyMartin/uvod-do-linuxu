@@ -41,7 +41,7 @@ Tento způsob nahrazování znaků v názvech souborů a adresářů se nazývá
 
 V další kapitole si ukážeme řešení situací, pro které by nám jednoduché použití hvězdiček a otazníků v shellu už nestačilo.
 
-Pokud budeme potřebovat specifikovat soubory, které se nachází jinde než v aktuálním pracovním adresáři, např. ve složitější adresářové struktuře, můžeme použít program _find_. Tento program nám vyhledá soubory podle našeho zadání a vypíše nám jejich absolutní cesty na terminál.
+Pokud budeme potřebovat specifikovat soubory, které se nachází jinde než v aktuálním pracovním adresáři, např. ve složitější adresářové struktuře, můžeme použít program `find`. Tento program nám vyhledá soubory podle našeho zadání a vypíše nám jejich absolutní cesty na terminál.
 
 ```shell
 $ find <kde vyhledávám> <co hledám>
@@ -56,13 +56,13 @@ Abychom si vše prakticky ukázali, budeme muset mírně odbočit do jiné čás
 
 ## Stažení a rozbalení pracovních dat
 
-Pro stažení souboru, který je uložen někde na webu, můžeme v prostředí příkazové řádky použít program _wget_.
+Pro stažení souboru, který je uložen někde na webu, můžeme v prostředí příkazové řádky použít program `wget`.
 
 ```shell
 $ wget https://kodim.cz/czechitas/uvod-do-linuxu/prikazova-radka/specifikace-cesty/assets/data.zip
 ```
 
-Následně si soubor s příponou `.zip` rozbalíme. Použijeme k tomu program _unzip_.
+Následně si soubor s příponou `.zip` rozbalíme. Použijeme k tomu program `unzip`.
 
 ```shell
 $ unzip data.zip

@@ -15,7 +15,7 @@ $ man ls
 Zobrazí se nám
 
 ```
-LS(1)                             User Commands                            LS(1)
+LS(1)                    User Commands                    LS(1)
 
 NAME
        ls - list directory contents
@@ -24,17 +24,18 @@ SYNOPSIS
        ls [OPTION]... [FILE]...
 
 DESCRIPTION
-       List  information  about  the  FILEs  (the current directory by default).
-       Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+       List  information about the FILEs (the current directory
+       by default).  Sort entries  alphabetically  if  none  of
+       -cftuvSUX nor --sort is specified.
 
-       Mandatory arguments to long options are mandatory for short options too.
+       Mandatory  arguments  to  long options are mandatory for
+       short options too.
 
        -a, --all
               do not ignore entries starting with .
 
        -A, --almost-all
-              do not list implied . and ..
-Manual page ls(1) line 1 (press h for help or q to quit)
+ Manual page ls(1) line 1 (press h for help or q to quit)
 ```
 
 Nejdůležitější je poslední řádek, který nám říká, že zobrazení manuálu ukončíme klávesou _q_. Pro pohyb dolů ve stránce můžeme použít šipku dolů.
@@ -57,7 +58,7 @@ I když budete možná s manuálem bojovat, dejte mu občas šanci. Pokud si př
 
 Zatím umíme manuál zobrazit, ukončit pomocí _q_ a "scrolovat" pomocí šipek. Velká výhoda toho manuál v počítači je vyhledávání. Chceme-li cokoliv na příslušné stránce najít, spustíme si vyhledávání pomocí lomítka _/_. Každý následující případ vyhledávaného slova dostaneme klávesou _n_ (next). Na předchozí výskyt použijeme velké _N_.
 
-Velmi výhodné pro začátečníka je možnost vyhledávat přes _všechny manuálové stránky_ v počítači. V tom případě musíme manuál spustit s parametrem _-k_ pro seznam stránek, popř. _-K_ pokud chceme stránky rovnou zobrazovat.
+Velmi výhodné pro začátečníka je možnost vyhledávat přes _všechny manuálové stránky_ v počítači. V tom případě musíme manuál spustit s parametrem `-k` pro seznam stránek, popř. `-K` pokud chceme stránky rovnou zobrazovat.
 
 ```shell
 $ man -k <slovo>
@@ -69,8 +70,8 @@ Na začátku každé manuálové stránky hned po názvu je odstavec _SYNOPSIS_.
 
 V jiných případech jsou zde uvedeny příklady volitelných argumentů:
 
-* `[OPTION]` - volitelný parametr je uveden v hranatých závorkách `[` a `]`
-* `[OPTION]...` - možnost více parametrů je znázorněno pomocí třech teček `...`
+* `[OPTION]` volitelný parametr je uveden v hranatých závorkách `[` a `]`
+* `[OPTION]...` možnost více parametrů je znázorněno pomocí třech teček `...`
 
-Zmínil jsem, že pokud nenastavíme příkaz dobře (např. vynecháme povinný argument), příkaz po spuštění nic neudělá, ale často nám vypíše nápovědu. Tuto nápovědu můžeme podle konvence zobrazit pomocí parametru _-h_ nebo _--help_.
+Zmínil jsem, že pokud nenastavíme příkaz dobře (např. vynecháme povinný argument), příkaz po spuštění nic neudělá, ale často nám vypíše nápovědu. Tuto nápovědu můžeme podle konvence zobrazit pomocí parametru `-h` nebo `--help`.
 
