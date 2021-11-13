@@ -22,7 +22,7 @@ Pokud by se vám z jakéhokoliv důvodu nepodařilo nainstalovat WSL2 pomocí p�
     ![Zapnutí funkcionality WSL](assets/01_terminal_screenshot.png){.fig .fig-100}
 
 1. Restartujte počítač!
-1. Stáhněte s nainstalujte WSL update Linuxového jádra (Step 4)
+1. Stáhněte a nainstalujte WSL update Linuxového jádra (Step 4)
 1. Nastavte WSL 2 jako výchozí verzi (Step 5)
 1. Nainstalujte linuxovou distribuci z Microsoft Store (např. Debian je kompletní distribuce, která je zároveň nejmenší z nabízených a stažení nebude trvat dlouho)
 

@@ -129,7 +129,7 @@ Program _grep_ má také mnoho užitečných přepínačů. Např. `grep -i` ign
 
 ### wc
 
-Druhý příkaz, který si ukážeme je program _wc_. Za vtipnou zkratkou se skrývá Word Count. Zavoláme-li příkaz s název souboru, vypíše se nám 3 čísla. V manuálové stránce zjistíme, že se jedná po počet řádku, slov a velikost souboru v bytech. Velikost souboru ukazuje i příkaz _ls -l_. Místo trojice čísel je však vhodnější znát jen jednu konkrétní hodnotu. Nejčastěji se příkaz používá jako _wc -l_, které vypíše počet řádků.
+Druhý příkaz, který si ukážeme je program _wc_. Za vtipnou zkratkou se skrývá Word Count. Zavoláme-li příkaz s názvem souboru, vypíší se nám 3 čísla. V manuálové stránce zjistíme, že se jedná o počet řádků, slov a velikost souboru v bytech. Velikost souboru ukazuje i příkaz _ls -l_. Místo trojice čísel je však vhodnější znát jen jednu konkrétní hodnotu. Nejčastěji se příkaz používá jako _wc -l_, které vypíše počet řádků.
 
 ```shell
 $ wc lesson.md
@@ -143,7 +143,7 @@ $ wc -l lesson.md
 
 ## Nejdůležitější znak v terminálu je |
 
-Pipe, roura nebo svislítko je znak, který máte na anglické klávesnici v blízkosti Enteru (vlevo nebo nad Enterem). Upřímně si myslím, že pipe se používá v linuxovém terminálu tak často, že stojí za to se přeučit na anglickou klávesnici. Tento znak se v shellu používá na tajemnou konstrukci, která se popisuje jako "přesměrování standardního výstup jednoho programu na standardní vstup druhého programu".
+Pipe, roura nebo svislítko je znak, který máte na anglické klávesnici v blízkosti Enteru (vlevo nebo nad Enterem). Upřímně si myslím, že pipe se používá v linuxovém terminálu tak často, že stojí za to se přeučit na anglickou klávesnici. Tento znak se v shellu používá na tajemnou konstrukci, která se popisuje jako "přesměrování standardního výstupu jednoho programu na standardní vstup druhého programu".
 
 Většina příkazů, která akceptuje jako svůj parametr název souboru, totiž umí načítat text i ze standardního vstupu, který může vypsat jiný program na standardní výstup.
 

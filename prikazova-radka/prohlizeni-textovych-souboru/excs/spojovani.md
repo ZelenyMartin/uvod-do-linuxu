@@ -3,7 +3,7 @@ title: Spojování CSV souborů
 demand: 3
 ---
 
-Stáhněte si v příkazové řádce do pracovního adresáře si následující soubory:
+Stáhněte si v příkazové řádce do pracovního adresáře následující soubory:
 
 ```shell
 https://kodim.cz/czechitas/uvod-do-linuxu/prikazova-radka/prohlizeni-textovych-souboru/assets/u202.csv

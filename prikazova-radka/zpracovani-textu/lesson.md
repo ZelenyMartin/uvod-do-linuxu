@@ -22,7 +22,7 @@ Jak dosáhneme seřazení od Z do A? Hledej v manuálu.
 
 ### Řazení čísel
 
-Pro další ukázce si vygenerujeme soubor deseti čísel pomocí příkazu _seq_
+Pro další ukázku si vygenerujeme soubor deseti čísel pomocí příkazu _seq_
 
 ```shell
 $ seq 10 > cisla.txt
@@ -230,7 +230,7 @@ $ sed -i 's/tým/team/' tymy.txt
 
 ## Řezání sloupců
 
-V této části si povíme něco co nejjednodušší možné práci např. s CSV soubory. Pro ukázku využijeme pracovní data s předchozího cvičení.
+V této části si povíme něco o zjednoduššení možné práce např. s CSV soubory. Pro ukázku využijeme pracovní data s předchozího cvičení.
 
 Pro vyřezávání sloupců slouží příkaz _cut_. Pro práci s CSV se nejčastěji využívá v kombinaci s parametry _-d_ udávající oddělovač polí v CSV a _-f_ (field) s číslem pole pro výřez.
 
@@ -418,6 +418,6 @@ $ awk 'length($2) == 3 {print $0}' data.txt
     313 vim
 ```
 
-Číslo uvozená znakem dolar _$_ značí příslušné políčko v řádku (čísluje se zde o 1). _$0_ znamená celý řádek.
+Číslo uvozená znakem dolar _$_ značí příslušné políčko v řádku (čísluje se zde od 1). _$0_ znamená celý řádek.
 
 Důležité je vědět, že síla programů _sed_, _awk_ (a např. i _grep_) vyzní až s použitím regulárních výrazů. Nevadí pokud jste programem _awk_ spíše zmateni. Stačí si zapamatovat, že něco takového existuje. Programovací úsilí směřujte více např. k jazyku Python.
