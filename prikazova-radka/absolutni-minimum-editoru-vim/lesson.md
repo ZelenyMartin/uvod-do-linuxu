@@ -4,7 +4,7 @@ Většina příkazů, které jsme si ukázali pracovala v režimu standardního 
 
 Výjimku v tomto měly nástroje _less_ a _man_, které zabraly celé dostupné okno terminálu a zobrazily na něj soubor nebo manuálovou stránku. Program _less_ nám však dovoloval pouze soubor prohlížet. Pokud bychom potřebovali nějaký soubor upravit, popř. vytvořit nový soubor s nějakým obsahem, budeme potřebovat textový editor.
 
-V profesionálním světe linuxové příkazové řádky se pro tyto případy nejčastěji používá editor _vim_. Důležité je vědět, že editor [VIM](https://www.vim.org/) se svým ovládáním významně liší běžných textových editorů, se kterými jste se doposud nejspíše setkali při psaní a editaci nějakého kódu (např. [Visual Studio Code](https://code.visualstudio.com/), [Atom](https://atom.io/) nebo [Sublime Text](https://atom.io/))
+V profesionálním světe linuxové příkazové řádky se pro tyto případy nejčastěji používá editor _vim_. Důležité je vědět, že editor [VIM](https://www.vim.org/) se svým ovládáním významně liší od běžných textových editorů, se kterými jste se doposud nejspíše setkali při psaní a editaci nějakého kódu (např. [Visual Studio Code](https://code.visualstudio.com/), [Atom](https://atom.io/) nebo [Sublime Text](https://atom.io/))
 
 Editor VIM je profesionální nástroj a je nutné věnovat určitý čas naučení se s ním pracovat. Odměnou nám bude mnohem efektivnější a rychlejší editace textových souborů (požadované operace lze vykonat mnohem rychleji za použití menšího počtu úhozů). Výhody vznikají pouze při psaní 10 prsty bez sledování klávesnice.
 
@@ -154,7 +154,7 @@ Příkazy, které už umíme jako _:w_ a _:q_ je možné i zkombinovat do jednoh
 
 Vyhledávání zapneme klávesou lomítko _/_ v editačním módu a napíšeme text, který chceme v souboru vyhledat. Na další výskyt vyhledávaného řetězce se přesuneme pomocí _n_ a na předchozí pomocí _N_. Toto funguje stejně jako v programech _less_ a _man_.
 
-VIM je profesionální editor pro editaci programů a konfiguračních souborů. Je velmi ergonomický, protože při jeho používání není nutné, aby prsty opustily prostřední řadu klávesnice. Není nutné používat kurzorové šipky, navigační blok nebo myš. Pohyb kurzoru a editace existujícího testu se provádí v editačním mód (Normal mode).
+VIM je profesionální editor pro editaci programů a konfiguračních souborů. Je velmi ergonomický, protože při jeho používání není nutné, aby prsty opustily prostřední řadu klávesnice. Není nutné používat kurzorové šipky, navigační blok nebo myš. Pohyb kurzoru a editace existujícího testu se provádí v editačním módu (Normal mode).
 
 Pokud vám editor VIM přijde děsivý, je důležité vědět, že po vás nikdo nevyžaduje, abyste ho používali výlučně. Pro dobrou znalost práce v linuxové příkazové řádce je však velmi vhodné znát alespoň minimum editoru VIM. Je důležité znát alespoň:
 

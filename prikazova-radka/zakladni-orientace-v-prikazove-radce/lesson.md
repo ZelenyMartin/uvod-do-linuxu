@@ -65,7 +65,7 @@ Jako novou věc si něco povíme o lomítku
 Rozlišení absolutní a relativní cesty ve velice jednoduché
 
 * Začíná-li cesta `/` nebo `~`, jedná se o absolutní cestu
-* Jinak se jedná se o relativní cestu
+* Jinak se jedná o relativní cestu
 
 Cesta je hierarchická posloupnost adresářů na disku. Lomítko `/` se používá i na oddělení názvů těchto adresářů. Základní rozdíly oproti Windows jsou ty, že Windows používá jako oddělovač zpětné lomítko `\` a na začátku absolutní cesty má název diskové jednotky, např. `C:\` nebo `D:\`. Linux toto nerozlišuje. Začátek je vždy jen jeden: `/` a diskové jednotky mohou být napojeny hierarchicky někam za toto lomítko.
 
