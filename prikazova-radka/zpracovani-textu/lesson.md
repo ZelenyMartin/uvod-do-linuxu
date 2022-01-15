@@ -276,45 +276,9 @@ Jarošová
 Bednář
 ```
 
-Hlavičky CSV souboru se zbavíme pomocí `tail -n +2`. Co to znamená a jak to funguje si ukážeme na řadě čísel:
+## Filtrování řádků
 
-```shell
-$ seq 10 | head -n 1
-1
-```
-
-```shell
-$ seq 10 | head -n -1
-1
-2
-3
-4
-5
-6
-7
-8
-9
-```
-
-```shell
-$ seq 10 | tail -n 1
-10
-```
-
-```shell
-$ seq 10 | tail -n +2
-2
-3
-4
-5
-6
-7
-8
-9
-10
-```
-
-Lze použít i příkaz `sed`. V jeho jazyce lze použít příkaz _d_ (delete), kterému předchází číslo řádku, které chceme ze vstupu smazat.
+Hlavičky CSV souboru se zbavíme pomocí příkazu `sed`. V jeho jazyce lze použít příkaz _d_ (delete), kterému předchází číslo řádku, které chceme ze vstupu smazat.
 
 ```shell
 $ seq 10 | sed '1d'
@@ -351,9 +315,66 @@ Zbořilová
 - history
 ]]]
 
-## Pokročilá práce s daty
 
-Nejpokročilejším nástrojem, který si dnes představíme je program `awk`. Z doposud představených nástrojů má nejdelší manuálovou stránku. Jedná se interpret programovacího jazyka, který je určen pro práci s tabulkovými daty. Nástroje jako `sed` a `awk` už jsou pokročilejší věci, ale jejich použití pro složité problémy nemusí být vždy nejlepší volba. Dnes jdou některé úkoly řešit snadněji pomocí jazyka Python a jeho knihovny Pandas.
+## Čtení na doma
+
+Ve zbytku kapitoly uvedu další ukázky, které je možné v linuxové příkazové řádce provádět s textem.
+
+### Další možnosti příkazů head a tail
+
+Vraťme se zpět k filtrování řádků. Víme, že k tomu můžeme použít program `grep`, pokud chceme vyhledat nějaký výskyt řetězce na řádku. Pokud chceme filtrovat podle čísla řádku, můžeme využít `head` nebo `tail`. Doposud jsme specifikovali kolik chceme nechat řádků za začátku souboru nebo na konci souboru. Můžeme však i opačně říct, že chceme smazat určitý počet řádku z konce (`head` a číslo s prefixem `-`) nebo vypsat vše od určitého řádku do konce (`tail` a číslo s prefixem `+`).
+
+Ekvivalentem k příkazu `sed '1d'` pro smazání hlavičky CSV souboru je také `tail -n +2`. Tento příkaz nám říká: vypiš konec souboru od řádku 2 dál. Co to znamená a jak to funguje si ukážeme na řadě čísel:
+
+Výpis prvního řádku
+
+```shell
+$ seq 10 | head -n 1
+1
+```
+
+Smazání posledního řádku
+
+```shell
+$ seq 10 | head -n -1
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+Výpis posledního řádku
+
+```shell
+$ seq 10 | tail -n 1
+10
+```
+
+Smazání prvního řádku:
+
+```shell
+$ seq 10 | tail -n +2
+2
+3
+4
+5
+6
+7
+8
+9
+10
+```
+
+Důležité je si zapamatovat, že `head` vždy vypisuje začátek souboru a `tail` vypisuje konec souboru. Pomocí prefixů `+` a `-` lze zpřesňovat toto chování.
+
+### awk
+
+Nejpokročilejším nástrojem, který si zde představíme je program `awk`. Z doposud představených nástrojů má nejdelší manuálovou stránku. Jedná se interpret programovacího jazyka, který je určen pro práci s tabulkovými daty. Nástroje jako `sed` a `awk` už jsou pokročilejší věci, ale jejich použití pro složité problémy nemusí být vždy nejlepší volba. Dnes jdou některé úkoly řešit snadněji pomocí jazyka Python a jeho knihovny Pandas.
 
 Výhoda `awk` podobně jako programu `sed` je však ta, že pracuje jako filtr a využívá unixový způsob práce se standardním textovým vstupem a výstupem a jeho propojení rourami. Tím se může plně integrovat se všemi ostatními nástroji, které jsme prozatím probrali.
 
