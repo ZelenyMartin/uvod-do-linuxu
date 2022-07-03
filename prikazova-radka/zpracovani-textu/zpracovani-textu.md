@@ -5,7 +5,7 @@ V této kapitole se vrhneme na pokročilejší zpracování textových souborů.
 Pro další práci si stáhneme nová pracovní data
 
 ```shell
-$ wget https://kodim.cz/czechitas/uvod-do-linuxu/prikazova-radka/zpracovani-textu/assets/names.txt
+$ wget https://kodim.cz/kurzy/uvod-do-linuxu/prikazova-radka/zpracovani-textu/assets/names.txt
 ```
 
 Využijme známé příkazy, abychom se s daty seznámili: `head`, `tail`, `wc -l`, `cat`, `less`
@@ -116,7 +116,7 @@ $ sort names.txt | uniq -c | sort -n | tail
 Další pracovní soubor obsahuje jména i příjmení.
 
 ```shell
-$ wget https://kodim.cz/czechitas/uvod-do-linuxu/prikazova-radka/zpracovani-textu/assets/fullnames.txt
+$ wget https://kodim.cz/kurzy/uvod-do-linuxu/prikazova-radka/zpracovani-textu/assets/fullnames.txt
 ```
 
 ### tr
@@ -311,9 +311,8 @@ Valenta
 Zbořilová
 ```
 
-[[[ excs Cvičení
-- history
-]]]
+## Cvičení
+::exc[excs>history]
 
 
 ## Čtení na doma

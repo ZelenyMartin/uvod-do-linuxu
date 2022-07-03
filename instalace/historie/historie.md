@@ -3,7 +3,7 @@ Než se vrhneme na praktickou část, povíme si něco o motivaci k používán�
 ## Unix a GNU/Linux
 Příkazová řádka v podobě, jakou používáme dnes v Linuxu, vznikla na přelomu šedesátých a sedmdesátých let v operačním systému Unix. Ten umožňoval, aby na jednom počítači mohlo pracovat naráz více uživatelů, kteří se připojovali z textových terminálů. Operačních systémů unixového typu vzniklo více. Byly velmi používané a licence byly drahé.
 
-![Historie Unixu](assets/unix_history.jpg){.fig .fig-100}
+::fig[Historie Unixu]{src=assets/unix_history.jpg size=100}
 
 Později vznikl projekt GNU, který si dal za cíl nabídnou unixové prostředí ve formě _free software_ (dnes se jedná o _open source_ model a svobodné licence). V kombinaci s jádrem Linux vzniká GNU/Linux, který se velmi rozšířil ve formě mnoha distribucí.
 

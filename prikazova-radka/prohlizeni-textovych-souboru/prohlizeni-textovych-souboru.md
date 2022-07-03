@@ -18,8 +18,8 @@ Název příkazu `cat` nemá nic společného s kočkou. Jedná se o zkratku ang
 Pro ukázku k čemu je to dobré si stáhněme další testovací soubory.
 
 ```shell
-$ wget https://kodim.cz/czechitas/uvod-do-linuxu/prikazova-radka/prohlizeni-textovych-souboru/assets/data1.txt
-$ wget https://kodim.cz/czechitas/uvod-do-linuxu/prikazova-radka/prohlizeni-textovych-souboru/assets/data2.txt
+$ wget https://kodim.cz/kurzy/uvod-do-linuxu/prikazova-radka/prohlizeni-textovych-souboru/assets/data1.txt
+$ wget https://kodim.cz/kurzy/uvod-do-linuxu/prikazova-radka/prohlizeni-textovych-souboru/assets/data2.txt
 ```
 
 Jednotlivě si zobrazme obsahy souborů.
@@ -109,7 +109,7 @@ K tomu nám poslouží program `grep`.
 $ grep <co hledávám> <název souboru>
 ```
 
-Grep budeme používat s dvěma hlavními parametry, a to jako první parametr hledaný řetězec a jako druhý parametr bude název souboru, který se má prohledávat. Program grep neumí jen prosté vyhledávání řetězců v textovém souboru. Jeho hlavní síla tkví ve využití regulárních výrazů. Jedná se však o pokročilou část, kterou nebudeme v úvodním kurzu probírat a zájemce odkážu na [kapitolu o využití regulární výrazů v Pythonu](https://kodim.cz/czechitas/progr2-python/python-pro-data-2/regularni-vyrazy).
+Grep budeme používat s dvěma hlavními parametry, a to jako první parametr hledaný řetězec a jako druhý parametr bude název souboru, který se má prohledávat. Program grep neumí jen prosté vyhledávání řetězců v textovém souboru. Jeho hlavní síla tkví ve využití regulárních výrazů. Jedná se však o pokročilou část, kterou nebudeme v úvodním kurzu probírat a zájemce odkážu na [kapitolu o využití regulární výrazů v Pythonu](https://kodim.cz/kurzy/progr2-python/python-pro-data-2/regularni-vyrazy).
 
 Při ukázce použití programu `grep` se vrátíme ke zdrojovému kódu lekce ve formátu Markdown. Markdown formátování kapitol začíná znakem _hash_ _#_ (a nadpis druhé úrovně je vyjádřen dvěma mřížkami _##_). Pozor: hledaný text _##_ zde musíme uzavřít do uvozovek (jedno jestli jednoduchých nebo dvojitých). V linuxovém shellu je znak _#_ považován za začátek komentáře, a tak by se nám zbytek příkazu ignoroval. Komentáře se tedy zapisují stejně jako např. v jazyce Python.
 
@@ -123,9 +123,8 @@ $ grep '##' lesson.md
 
 Program _grep_ má také mnoho užitečných přepínačů. Např. `grep -i` ignoruje velikost písmen v hledaném textu nebo `grep -v` invertuje výběr (vypíše naopak řádky, které neobsahují hledaný výraz).
 
-[[[ excs Cvičení
-- spojovani
-]]]
+## Cvičení
+::exc[excs>spojovani]
 
 ### wc
 
@@ -143,7 +142,7 @@ $ wc -l lesson.md
 
 ## Nejdůležitější znak v terminálu je |
 
-<term cs="Roura" en="pipe"> nebo-li svislítko je znak, který máte na anglické klávesnici vlevo nebo nad klávesou Enter. Upřímně si myslím, že roura se používá v linuxovém terminálu tak často, že stojí za to se přeučit na anglickou klávesnici. Tento znak se v shellu používá na tajemnou konstrukci, která se popisuje jako "přesměrování standardního výstupu jednoho programu na standardní vstup druhého programu".
+:term{cs="Roura" en="pipe"} nebo-li svislítko je znak, který máte na anglické klávesnici vlevo nebo nad klávesou Enter. Upřímně si myslím, že roura se používá v linuxovém terminálu tak často, že stojí za to se přeučit na anglickou klávesnici. Tento znak se v shellu používá na tajemnou konstrukci, která se popisuje jako "přesměrování standardního výstupu jednoho programu na standardní vstup druhého programu".
 
 Většina příkazů, která akceptuje jako svůj parametr název souboru, totiž umí načítat text i ze standardního vstupu, který může vypsat jiný program na standardní výstup.
 

@@ -1,0 +1,5 @@
+title: Úvod do Linuxu
+lead: Workshop přibližující základy práce v linuxové příkazové řádce
+chapters:
+  - instalace
+  - prikazova-radka

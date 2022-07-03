@@ -19,24 +19,24 @@ Pokud by se vám z jakéhokoliv důvodu nepodařilo nainstalovat WSL2 pomocí p�
 
 1. Zapněte funkcionalitu WSL a virtualizace (Step 1 a 3 v oficiálním návodu)
 
-    ![Zapnutí funkcionality WSL](assets/01_terminal_screenshot.png){.fig .fig-100}
+    ::fig[Zapnutí funkcionality WSL]{src=assets/01_terminal_screenshot.png size=100}
 
 1. Restartujte počítač!
 1. Stáhněte a nainstalujte WSL update Linuxového jádra (Step 4)
 1. Nastavte WSL 2 jako výchozí verzi (Step 5)
 1. Nainstalujte linuxovou distribuci z Microsoft Store (např. Debian je kompletní distribuce, která je zároveň nejmenší z nabízených a stažení nebude trvat dlouho)
 
-    ![Instalace distribuce z Microsoft Store](assets/02_ms_store_debian_instalace.png){.fig .fig-100}
+    ::fig[Instalace distribuce z Microsoft Store]{src=assets/02_ms_store_debian_instalace.png size=100}
 
 1. Po prvním spuštění distribuce vyžaduje vytvoření uživatele s heslem.
 
     **POZOR!** Psaní hesla v linuxovém terminálu neposkytuje žádnou vizuální odezvu (žádné `*` nebo •). To, že se nic nezobrazuje, když zadáváte heslo, je účel.
 
-    ![Vytvoření linuxového uživatele](assets/05_debian_vytvoreni_uzivatele.png){.fig .fig-100}
+    ::fig[Vytvoření linuxového uživatele]{src=assets/05_debian_vytvoreni_uzivatele.png size=100}
 
 1. Od teď již budete moci kdykoliv spustit WSL zadáním tohoto příkazu v nabídce Start
 
-![Spouštění WSL](assets/06_start_WSL.png){.fig .fig-100}
+::fig[Spouštění WSL]{src=assets/06_start_WSL.png size=100}
 
 
 ## MacOS a Linux

@@ -33,9 +33,8 @@ data1.csv  data1.json  dataA.csv  dataA.json
 
 Tento způsob nahrazování znaků v názvech souborů a adresářů se nazývá _glob_.
 
-[[[ excs Cvičení
-- glob
-]]]
+## Cvičení
+::exc[excs>glob]
 
 ## Vyhledávání souborů
 
@@ -59,7 +58,7 @@ Abychom si vše prakticky ukázali, budeme muset mírně odbočit do jiné čás
 Pro stažení souboru, který je uložen někde na webu, můžeme v prostředí příkazové řádky použít program `wget`.
 
 ```shell
-$ wget https://kodim.cz/czechitas/uvod-do-linuxu/prikazova-radka/specifikace-cesty/assets/data.zip
+$ wget https://kodim.cz/kurzy/uvod-do-linuxu/prikazova-radka/specifikace-cesty/assets/data.zip
 ```
 
 Následně si soubor s příponou `.zip` rozbalíme. Použijeme k tomu program `unzip`.

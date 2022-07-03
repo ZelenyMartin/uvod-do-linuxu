@@ -1,0 +1,10 @@
+title: Příkazová řádka
+lead: Nyní semůžeme vrhnout na obsah kurzu
+lessons:
+  - zakladni-orientace-v-prikazove-radce
+  - operace-se-soubory-a-adresari
+  - manualove-stranky
+  - specifikace-cesty
+  - prohlizeni-textovych-souboru
+  - zpracovani-textu
+  - absolutni-minimum-editoru-vim

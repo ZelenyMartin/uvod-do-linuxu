@@ -28,7 +28,7 @@ $ ls -l
 $ ls -la
 ```
 
-Příkaz `ls` vypíše seznam souborů a adresářů v aktuálním pracovním adresáři (list). Jedná se o jeden z nejpoužívanějších příkazů při práci v příkazové řádce. Pokud se nám nelíbí, že se obsah vypsal vedle sebe, ale chtěli ho bychom viděl raději pod sebou, použijeme <term cs="přepínač" en="switch"> `-l` (long), který nám navíc vypíše spoustu další užitečných informací.
+Příkaz `ls` vypíše seznam souborů a adresářů v aktuálním pracovním adresáři (list). Jedná se o jeden z nejpoužívanějších příkazů při práci v příkazové řádce. Pokud se nám nelíbí, že se obsah vypsal vedle sebe, ale chtěli ho bychom viděl raději pod sebou, použijeme :term{cs="přepínač" en="switch"} `-l` (long), který nám navíc vypíše spoustu další užitečných informací.
 
 Přepínač `-a` (all) navíc vypíše i takové podivné věci jako `.` (tečka) a `..` (dvě tečky). To jsou podobně jako `~` další zástupné symboly a značí
 
@@ -47,7 +47,7 @@ Kromě přepínačů se za příkaz na příkazové řádce někdy píšou také
 ## Jak shell pozná co má spustit?
 V této části si také povíme, co to vlastně jsou ty příkazy, které do příkazové řádky píšeme. Z pohledu linuxového shellu se totiž jedná o samostatné spustitelné programy, které se mohou doplnit o příslušné parametry a po spuštění něco udělají. A jak shell pozná jestli to slovo, které v něm spustíme je název nějakého programu? Musí si ho totiž v počítači vyhledat.
 
-Takové vyhledávání programu je naštěstí docela rychlé, a jednoduché. V běžícím shellu je definovaná tzn. <term cs="proměnná prostředí" en="environment variable"> s názvem `PATH` a ta obsahuje absolutní cesty k adresářům, kde se v systému nachází spustitelné programy. Shell se automaticky podívá do všech těchto adresářů a první program, který vyhovuje hledanému názvu, spustí. Pro zájemce navíc dodám, že tyto cesty si můžeme zobrazit pomocí příkazu `echo $PATH` (jedná se o seznam absolutních cest oddělený dvojtečkou).
+Takové vyhledávání programu je naštěstí docela rychlé, a jednoduché. V běžícím shellu je definovaná tzn. :term{cs="proměnná prostředí" en="environment variable"} s názvem `PATH` a ta obsahuje absolutní cesty k adresářům, kde se v systému nachází spustitelné programy. Shell se automaticky podívá do všech těchto adresářů a první program, který vyhovuje hledanému názvu, spustí. Pro zájemce navíc dodám, že tyto cesty si můžeme zobrazit pomocí příkazu `echo $PATH` (jedná se o seznam absolutních cest oddělený dvojtečkou).
 
 
 ## Absolutní a relativní cesta
@@ -101,6 +101,5 @@ Všechny přesuny si můžeme kontrolovat tak, že se nám aktuální pracovní 
 
 Zmíním ještě hezký tip, který nám pomůže, pokud uděláme v cestě chybu a pracovní adresář se nám změní na nějaký, který jsme nechtěli: pro přesun do adresáře, který byl našim předchozím pracovním adresářem napíšeme `cd -`.
 
-[[[ excs Cvičení
-- cviceni
-]]]
+## Cvičení
+::exc[excs>cviceni]
