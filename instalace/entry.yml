@@ -1,5 +1,5 @@
 title: Instalace
-lead: Nejprve se podíváme na instalaci. Pokud už vše máte nachystáno, můžete nahlédnout do slavné historie Unixu.
+lead: Nejprve se podíváme na instalaci WSL. Pokud už vše máte nachystáno, můžete nahlédnout do slavné historie Unixových terminálů.
 lessons:
   - instalace-wsl
   - historie
