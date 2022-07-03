@@ -4,7 +4,7 @@ Prozatím jsme pracovali s adresářovou strukturou a prázdnými soubory. Teď 
 Jako ukázkový soubor si stáhneme zdrojový kód textu předchozí lekce ve formátu Markdown. Budeme na tento soubor nahlížet jako na obyčejný textový soubor.
 
 ```shell
-$ wget https://raw.githubusercontent.com/ZelenyMartin/uvod-do-linuxu/master/prikazova-radka/specifikace-cesty/lesson.md
+$ wget https://raw.githubusercontent.com/ZelenyMartin/uvod-do-linuxu/main/prikazova-radka/specifikace-cesty/lesson.md
 ```
 
 Příkaz pro vypsání obsahu souboru se jmenuje `cat`.
@@ -91,7 +91,7 @@ $ tail lesson.md
 $ tail -n 5 lesson.md
 ```
 
-Posledním hezkým nástrojem pro zobrazení souboru je program `less`. Tento příkaz, podobně jako program `man`, funguje interaktivně a na celý terminál nám zobrazí obsah souboru. Také nám umožní souborem procházet pomocí šipky nahoru a dolu a kláves _Home_ a _End_. Neméně důležitou funkcionalitou je interaktivní vyhledávání, které spustíme klávesou lomítko `/`, na další výskyt vyhledávaného textu se posuneme klávesou _n_ a na předchozí výskyt velkým _N_. Program `less` ukončíme opět klávesou _q_.
+Posledním hezkým nástrojem pro zobrazení souboru je program `less`. Tento příkaz, podobně jako program `man`, funguje interaktivně a na celý terminál nám zobrazí obsah souboru. Také nám umožní souborem procházet pomocí šipky nahoru a dolu a kláves :kbd[Home] a :kbd[End]. Neméně důležitou funkcionalitou je interaktivní vyhledávání, které spustíme klávesou lomítko :kbd[/], na další výskyt vyhledávaného textu se posuneme klávesou :kbd[n] a na předchozí výskyt velkým :kbd[N]. Program `less` ukončíme opět klávesou :kbd[q].
 
 ```shell
 $ less lesson.md
@@ -142,7 +142,7 @@ $ wc -l lesson.md
 
 ## Nejdůležitější znak v terminálu je |
 
-:term{cs="Roura" en="pipe"} nebo-li svislítko je znak, který máte na anglické klávesnici vlevo nebo nad klávesou Enter. Upřímně si myslím, že roura se používá v linuxovém terminálu tak často, že stojí za to se přeučit na anglickou klávesnici. Tento znak se v shellu používá na tajemnou konstrukci, která se popisuje jako "přesměrování standardního výstupu jednoho programu na standardní vstup druhého programu".
+:term{cs="Roura" en="pipe"} :kbd[|] nebo-li svislítko je znak, který máte na anglické klávesnici vlevo nebo nad klávesou :kbd[Enter]. Upřímně si myslím, že roura se používá v linuxovém terminálu tak často, že stojí za to se přeučit na anglickou klávesnici. Tento znak se v shellu používá na tajemnou konstrukci, která se popisuje jako "přesměrování standardního výstupu jednoho programu na standardní vstup druhého programu".
 
 Většina příkazů, která akceptuje jako svůj parametr název souboru, totiž umí načítat text i ze standardního vstupu, který může vypsat jiný program na standardní výstup.
 

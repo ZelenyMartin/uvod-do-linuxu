@@ -11,7 +11,7 @@ Později vznikl projekt GNU, který si dal za cíl nabídnou unixové prostřed�
 ## Terminál == konzole == příkazová řádka == shell
 Tyto výrazy mají k sobě velmi blízko a budeme je považovat za synonyma. V angličtině se jedná analogicky o výrazy: _Terminal_, _Console_ a _Command Line_ (často ve spojení _Command Line Interface_, zkráceně _CLI_). _Shell_ je označení typu programů pracujících jako interpret příkazové řádky. Často používaný linuxový shell je například _Bash_. Jedná se o program, který pochopí, co na příkazovou řádku napíšeme. Podle toho se zachová a vypíše nám výsledek.
 
-Terminál realizuje textové vstupně/výstupní rozhraní s počítačem. Jednoduše řečeno počítači na klávesnici zadáme příkaz v podobě textu ukončený klávesou _Enter_. A výstupem bude text s výsledkem příkazu, který nám počítač vypíše.
+Terminál realizuje textové vstupně/výstupní rozhraní s počítačem. Jednoduše řečeno počítači na klávesnici zadáme příkaz v podobě textu ukončený klávesou :kbd[Enter]. A výstupem bude text s výsledkem příkazu, který nám počítač vypíše.
 
 
 ## Jak vypadá Linux

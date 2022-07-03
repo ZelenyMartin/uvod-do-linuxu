@@ -46,7 +46,7 @@ $ rm -rf <adresář se soubory>
 
 Tento příkaz rekurzivně smaže vše co mu předhodíme a na nic se nás ptát nebude (`-f` znamená force)
 
-Příkazy pro vytváření a mazání umí pracovat i s více parametry. Pokud chceme naráz vytvořit více souboru příkazem `touch` nebo více adresářů příkazem `mkdir`, můžeme jejich názvy naskládat jako parametry příkazové řádky za sebe spustit jedním stiskem klávesy _Enter_. Stejně funguje i jejich mazání pomocí `rm` či `rmdir`.
+Příkazy pro vytváření a mazání umí pracovat i s více parametry. Pokud chceme naráz vytvořit více souboru příkazem `touch` nebo více adresářů příkazem `mkdir`, můžeme jejich názvy naskládat jako parametry příkazové řádky za sebe spustit jedním stiskem klávesy :kbd[Enter]. Stejně funguje i jejich mazání pomocí `rm` či `rmdir`.
 
 ## Kopírování a přesun
 Poslední základní znalost práce se soubory a adresáři v linuxové příkazové řádce spočívá v jejich kopírování a přesouvání.

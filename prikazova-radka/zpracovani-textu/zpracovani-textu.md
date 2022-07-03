@@ -184,7 +184,7 @@ Jak na to? Napíšeme-li příkaz
 $ cat > tymy.txt
 ```
 
-program bude čekat na standardní vstup, který přesměruje do souboru `tymy.txt`. Zkopírujte si text výše a vložte do čekajícího terminálu a zadávání textu ukončete klávesovou zkratkou _Ctrl+D_.
+program bude čekat na standardní vstup, který přesměruje do souboru `tymy.txt`. Zkopírujte si text výše a vložte do čekajícího terminálu a zadávání textu ukončete klávesovou zkratkou :kbd[Ctrl+D].
 
 Pokud budeme nyní chtít čísla týmu změnit na písmena bude fungovat
 
@@ -199,7 +199,7 @@ tým C
 
 Předchozí příklad použití programu `tr` je svou funkcionalitou omezen tím, že nahrazuje vždy pouze jeden znak. Co když budeme potřebovat v našich datech nahradit celé slovo jiným slovem? V tom nám pomůže jedna z funkcí pokročilejšího nástroje - programu `sed` (Stream EDitor).
 
-Program `sed` využívá něco jako vlastní komplexní jazyk, díky kterému je ovšem i velmi mocný a lze jej využít na spoustu úkolů. My si ukážeme velmi častý příklad, a to využití příkazu _s_ (substitute).
+Program `sed` využívá něco jako vlastní komplexní jazyk, díky kterému je ovšem i velmi mocný a lze jej využít na spoustu úkolů. My si ukážeme velmi častý příklad, a to využití příkazu `s` (substitute).
 
 Budeme-li chtít nahradit v datech `fullnames.txt` mezeru za tečku pomocí sedu, napíšeme:
 
@@ -217,7 +217,7 @@ Taylor.Murphy
 Owen.Vass
 ```
 
-První znak je požadovaný příkaz _s_ (substitute), následuje oddělovač lomítko _/_, potom co chceme najít (mezeru) a za dalším lomítkem napíšeme na co ji chceme změnit (tečka). Na konci nezapomeneme na uzavírací lomítko.
+První znak je požadovaný příkaz `s` (substitute), následuje oddělovač lomítko `/`, potom co chceme najít (mezeru) a za dalším lomítkem napíšeme na co ji chceme změnit (tečka). Na konci nezapomeneme na uzavírací lomítko.
 
 Lepší příklad bude nahrazení celého slova _tým_ za anglické _team_
 
@@ -278,7 +278,7 @@ Bednář
 
 ## Filtrování řádků
 
-Hlavičky CSV souboru se zbavíme pomocí příkazu `sed`. V jeho jazyce lze použít příkaz _d_ (delete), kterému předchází číslo řádku, které chceme ze vstupu smazat.
+Hlavičky CSV souboru se zbavíme pomocí příkazu `sed`. V jeho jazyce lze použít příkaz `d` (delete), kterému předchází číslo řádku, které chceme ze vstupu smazat.
 
 ```shell
 $ seq 10 | sed '1d'
@@ -438,6 +438,6 @@ $ awk 'length($2) == 3 {print $0}' data.txt
     313 vim
 ```
 
-Číslo uvozená znakem dolar _$_ značí příslušné políčko v řádku (čísluje se zde od 1). _$0_ znamená celý řádek.
+Číslo uvozená znakem dolar `$` značí příslušné políčko v řádku (čísluje se zde od 1). `$0` znamená celý řádek.
 
 Důležité je vědět, že síla programů `sed`, `awk` (a např. i `grep`) vyzní až s použitím regulárních výrazů. Nevadí pokud jste programem `awk` spíše zmateni. Stačí si zapamatovat, že něco takového existuje. Programovací úsilí směřujte více např. k jazyku Python.

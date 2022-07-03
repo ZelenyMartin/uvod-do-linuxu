@@ -38,7 +38,7 @@ DESCRIPTION
  Manual page ls(1) line 1 (press h for help or q to quit)
 ```
 
-Nejdůležitější je poslední řádek, který nám říká, že zobrazení manuálu ukončíme klávesou _q_. Pro pohyb dolů ve stránce můžeme použít šipku dolů.
+Nejdůležitější je poslední řádek, který nám říká, že zobrazení manuálu ukončíme klávesou :kbd[q]. Pro pohyb dolů ve stránce můžeme použít šipku dolů.
 
 Zcela přiznávám, že čtení a pochopení obsahu manuálových stránek je pro začátečníka náročná věc. Manuálové stránky jsou psané specifickou IT angličtinou plnou výrazů, které nikde nejsou vysvětleny a člověk musí jejich význam opět hledat.
 
@@ -56,7 +56,7 @@ I když budete možná s manuálem bojovat, dejte mu občas šanci. Pokud si př
 
 ### Ovládání manuálu
 
-Zatím umíme manuál zobrazit, ukončit pomocí _q_ a "scrolovat" pomocí šipek. Velká výhoda toho manuál v počítači je vyhledávání. Chceme-li cokoliv na příslušné stránce najít, spustíme si vyhledávání pomocí lomítka _/_. Každý následující případ vyhledávaného slova dostaneme klávesou _n_ (next). Na předchozí výskyt použijeme velké _N_.
+Zatím umíme manuál zobrazit, ukončit pomocí :kbd[q] a "scrolovat" pomocí šipek. Velká výhoda toho manuál v počítači je vyhledávání. Chceme-li cokoliv na příslušné stránce najít, spustíme si vyhledávání pomocí lomítka :kbd[/]. Každý následující případ vyhledávaného slova dostaneme klávesou :kbd[n] (next). Na předchozí výskyt použijeme velké :kbd[N].
 
 Velmi výhodné pro začátečníka je možnost vyhledávat přes _všechny manuálové stránky_ v počítači. V tom případě musíme manuál spustit s parametrem `-k` pro seznam stránek, popř. `-K` pokud chceme stránky rovnou zobrazovat.
 
