@@ -30,7 +30,7 @@ U vimu rozlišujeme 3 hlavní režimy práce:
 
 ## Jak to spustím a jak to vypnu
 
-Editor VIM spustíme příkazem :kbd[vim]. Zobrazí se nám "Welcome screen", kde si můžeme povšimnout dobré rady jak editor vlastně ukončit. Editor zavřeme vstupem do příkazového módu pomocí dvojtečky :kbd[:] následované příkazem :kbd[q] a :kbd[Enter].
+Editor VIM spustíme příkazem `vim`. Zobrazí se nám "Welcome screen", kde si můžeme povšimnout dobré rady jak editor vlastně ukončit. Editor zavřeme vstupem do příkazového módu pomocí dvojtečky :kbd[:] následované příkazem :kbd[q] a :kbd[Enter].
 
 Vyzkoušejte si několikrát otevřít a bezpečně zavřít prázdný editor VIM.
 

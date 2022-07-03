@@ -109,11 +109,11 @@ K tomu nám poslouží program `grep`.
 $ grep <co hledávám> <název souboru>
 ```
 
-Grep budeme používat s dvěma hlavními parametry, a to jako první parametr hledaný řetězec a jako druhý parametr bude název souboru, který se má prohledávat. Program grep neumí jen prosté vyhledávání řetězců v textovém souboru. Jeho hlavní síla tkví ve využití regulárních výrazů. Jedná se však o pokročilou část, kterou nebudeme v úvodním kurzu probírat a zájemce odkážu na [kapitolu o využití regulární výrazů v Pythonu](https://kodim.cz/kurzy/progr2-python/python-pro-data-2/regularni-vyrazy).
+Grep budeme používat s dvěma hlavními parametry, a to jako první parametr hledaný řetězec a jako druhý parametr bude název souboru, který se má prohledávat. Program `grep` neumí jen prosté vyhledávání řetězců v textovém souboru. Jeho hlavní síla tkví ve využití :term{cs="regulárních výrazů" en="Regular expression"}. Jedná se však o pokročilou část, kterou nebudeme v úvodním kurzu probírat.
 
-Při ukázce použití programu `grep` se vrátíme ke zdrojovému kódu lekce ve formátu Markdown. Markdown formátování kapitol začíná znakem _hash_ _#_ (a nadpis druhé úrovně je vyjádřen dvěma mřížkami _##_). Pozor: hledaný text _##_ zde musíme uzavřít do uvozovek (jedno jestli jednoduchých nebo dvojitých). V linuxovém shellu je znak _#_ považován za začátek komentáře, a tak by se nám zbytek příkazu ignoroval. Komentáře se tedy zapisují stejně jako např. v jazyce Python.
+Při ukázce použití programu `grep` se vrátíme ke zdrojovému kódu lekce ve formátu Markdown. Markdown formátování kapitol začíná znakem _hash_ `#` (a nadpis druhé úrovně je vyjádřen dvěma mřížkami `##`). Pozor: hledaný text `##` zde musíme uzavřít do uvozovek (jedno jestli jednoduchých nebo dvojitých). V linuxovém shellu je znak `#` považován za začátek komentáře, a tak by se nám zbytek příkazu ignoroval. Komentáře se tedy zapisují stejně jako např. v jazyce Python.
 
-```
+```shell
 $ grep '##' lesson.md
 ## Specifikace cesty
 ## Vyhledávání souborů
@@ -121,7 +121,7 @@ $ grep '##' lesson.md
 ## Příklady použití příkazu find
 ```
 
-Program _grep_ má také mnoho užitečných přepínačů. Např. `grep -i` ignoruje velikost písmen v hledaném textu nebo `grep -v` invertuje výběr (vypíše naopak řádky, které neobsahují hledaný výraz).
+Program `grep` má také mnoho užitečných přepínačů. Např. `grep -i` ignoruje velikost písmen v hledaném textu nebo `grep -v` invertuje výběr (vypíše naopak řádky, které neobsahují hledaný výraz).
 
 ## Cvičení
 ::exc[excs>spojovani]
@@ -157,25 +157,25 @@ Příkaz `grep '##' lesson.md` samotný by nám vypsal v tomto případě 4 řá
 
 Zkusme to zkombinovat s tím co už známe. Vypiš první kapitolu:
 
-```
+```shell
 $ grep '##' lesson.md | head -n 1
 ## Specifikace cesty
 ```
 
 Vypiš poslední kapitolu:
 
-```
+```shell
 $ grep '##' lesson.md | tail -n 1
 ## Příklady použití příkazu find
 ```
 
-Kolik se v adresáři nachází souborů s příponou _.csv_?
+Kolik se v adresáři nachází souborů s příponou `.csv`?
 
 ```shell
 $ ls *.csv | wc -l
 ```
 
-V posledním případě je třeba znát, že některé příkazy, jako je např. _ls_ umí poznat, jestli se jejich standardní výstup vypisuje na terminál nebo do roury. Podle toho upraví své chování.
+V posledním případě je třeba znát, že některé příkazy, jako je např. `ls` umí poznat, jestli se jejich standardní výstup vypisuje na terminál nebo do roury. Podle toho upraví své chování.
 
 Vyzkoušejte si např.
 
