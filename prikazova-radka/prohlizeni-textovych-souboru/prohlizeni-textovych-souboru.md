@@ -4,7 +4,7 @@ Prozatím jsme pracovali s adresářovou strukturou a prázdnými soubory. Teď 
 Jako ukázkový soubor si stáhneme zdrojový kód textu předchozí lekce ve formátu Markdown. Budeme na tento soubor nahlížet jako na obyčejný textový soubor.
 
 ```shell
-$ wget https://raw.githubusercontent.com/ZelenyMartin/uvod-do-linuxu/main/prikazova-radka/specifikace-cesty/lesson.md
+$ wget https://raw.githubusercontent.com/ZelenyMartin/uvod-do-linuxu/main/prikazova-radka/specifikace-cesty/specifikace-cesty.md
 ```
 
 Příkaz pro vypsání obsahu souboru se jmenuje `cat`.
@@ -18,8 +18,8 @@ Název příkazu `cat` nemá nic společného s kočkou. Jedná se o zkratku ang
 Pro ukázku k čemu je to dobré si stáhněme další testovací soubory.
 
 ```shell
-$ wget https://kodim.cz/kurzy/uvod-do-linuxu/prikazova-radka/prohlizeni-textovych-souboru/assets/data1.txt
-$ wget https://kodim.cz/kurzy/uvod-do-linuxu/prikazova-radka/prohlizeni-textovych-souboru/assets/data2.txt
+$ wget https://kodim.cz/cms/assets/kurzy/uvod-do-linuxu/prikazova-radka/prohlizeni-textovych-souboru/data1.txt
+$ wget https://kodim.cz/cms/assets/kurzy/uvod-do-linuxu/prikazova-radka/prohlizeni-textovych-souboru/data2.txt
 ```
 
 Jednotlivě si zobrazme obsahy souborů.

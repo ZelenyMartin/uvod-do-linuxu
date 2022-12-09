@@ -58,7 +58,7 @@ Abychom si vše prakticky ukázali, budeme muset mírně odbočit do jiné čás
 Pro stažení souboru, který je uložen někde na webu, můžeme v prostředí příkazové řádky použít program `wget`.
 
 ```shell
-$ wget https://kodim.cz/kurzy/uvod-do-linuxu/prikazova-radka/specifikace-cesty/assets/data.zip
+$ wget https://kodim.cz/cms/assets/kurzy/uvod-do-linuxu/prikazova-radka/specifikace-cesty/data.zip
 ```
 
 Následně si soubor s příponou `.zip` rozbalíme. Použijeme k tomu program `unzip`.
