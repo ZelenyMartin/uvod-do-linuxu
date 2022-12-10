@@ -113,7 +113,7 @@ Grep budeme používat s dvěma hlavními parametry, a to jako první parametr h
 
 Při ukázce použití programu `grep` se vrátíme ke zdrojovému kódu lekce ve formátu Markdown. Markdown formátování kapitol začíná znakem _hash_ `#` (a nadpis druhé úrovně je vyjádřen dvěma mřížkami `##`). Pozor: hledaný text `##` zde musíme uzavřít do uvozovek (jedno jestli jednoduchých nebo dvojitých). V linuxovém shellu je znak `#` považován za začátek komentáře, a tak by se nám zbytek příkazu ignoroval. Komentáře se tedy zapisují stejně jako např. v jazyce Python.
 
-```shell
+```
 $ grep '##' lesson.md
 ## Specifikace cesty
 ## Vyhledávání souborů
@@ -157,14 +157,14 @@ Příkaz `grep '##' lesson.md` samotný by nám vypsal v tomto případě 4 řá
 
 Zkusme to zkombinovat s tím co už známe. Vypiš první kapitolu:
 
-```shell
+```
 $ grep '##' lesson.md | head -n 1
 ## Specifikace cesty
 ```
 
 Vypiš poslední kapitolu:
 
-```shell
+```
 $ grep '##' lesson.md | tail -n 1
 ## Příklady použití příkazu find
 ```
