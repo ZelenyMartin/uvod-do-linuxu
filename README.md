@@ -4,11 +4,11 @@
 
 Naučíš se ovládat operační systém Linux, protože ti toto může otevřít dveře ke spoustě pracovních pozic v IT firmách.
 
-Zvládneš zprovoznit Linux na Windows 10. Prozkoumáš příkazovou řádku a naučíš se, jak s ní pracovat i typické příkazy, se kterými se uživatel Linuxu setká. Stejně jako Linux je i MacOS operační systém unixového typu. Proto by většina probíraných příkazů měla fungovat i na počítačích Apple.
+Zvládneš zprovoznit Linux na Windows. Prozkoumáš příkazovou řádku a naučíš se, jak s ní pracovat i typické příkazy, se kterými se uživatel Linuxu setká. Stejně jako Linux je i MacOS operační systém unixového typu. Proto by většina probíraných příkazů měla fungovat i na počítačích Apple.
 
 ### Co se naučíš
 
-  * Nainstalovat WSL 2 (Windows Subsystem for Linux verze 2) a zprovoznit Linux na Windows 10
+  * Nainstalovat WSL 2 (Windows Subsystem for Linux verze 2) a zprovoznit Linux na Windows
   * Výhody práce v příkazové řádce
   * Procházet adresářovou strukturu, vytvářet adresáře, přesouvat a kopírovat soubory
   * Absolutní a relativní cestu

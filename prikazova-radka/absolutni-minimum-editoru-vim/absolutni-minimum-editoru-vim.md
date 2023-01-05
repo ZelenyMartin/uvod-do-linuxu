@@ -4,7 +4,7 @@ Většina příkazů, které jsme si ukázali pracovala v režimu standardního 
 
 Výjimku v tomto měly nástroje `less` a `man`, které zabraly celé dostupné okno terminálu a zobrazily na něj soubor nebo manuálovou stránku. Program `less` nám však dovoloval pouze soubor prohlížet. Pokud bychom potřebovali nějaký soubor upravit, popř. vytvořit nový soubor s nějakým obsahem, budeme potřebovat textový editor.
 
-V profesionálním světe linuxové příkazové řádky se pro tyto případy nejčastěji používá editor `vim`. Důležité je vědět, že editor [VIM](https://www.vim.org/) se svým ovládáním významně liší od běžných textových editorů, se kterými jste se doposud nejspíše setkali při psaní a editaci nějakého kódu (např. [Visual Studio Code](https://code.visualstudio.com/), [Atom](https://atom.io/) nebo [Sublime Text](https://www.sublimetext.com/))
+V profesionálním světe linuxové příkazové řádky se pro tyto případy nejčastěji používá editor `vim`. Důležité je vědět, že editor [VIM](https://www.vim.org/) se svým ovládáním významně liší od běžných textových editorů, se kterými jste se doposud nejspíše setkali při psaní a editaci nějakého kódu (např. [Visual Studio Code](https://code.visualstudio.com/) nebo [Sublime Text](https://www.sublimetext.com/))
 
 Editor VIM je profesionální nástroj a je nutné věnovat určitý čas naučení se s ním pracovat. Odměnou nám bude mnohem efektivnější a rychlejší editace textových souborů (požadované operace lze vykonat mnohem rychleji za použití menšího počtu úhozů). Výhody vznikají pouze při psaní 10 prsty bez sledování klávesnice.
 

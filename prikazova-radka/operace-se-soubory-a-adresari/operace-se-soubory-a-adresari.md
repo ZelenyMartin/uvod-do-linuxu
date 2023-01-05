@@ -28,7 +28,7 @@ $ rm <soubor>
 
 Prostě odstraníme soubor (remove). V některých prostředích se však může příkaz `rm` volat ve skutečnosti jako `rm -i`, kde se nám zobrazí otázka, jestli opravdu chceme tento příkaz odstranit a my na ni musíme odpovědět `y` (yes).
 
-```shell
+```
 $ rmdir <prázdný adresář>
 ```
 Tímto odstraníme adresář (remove directory). Pozor - příkaz funguje pouze na prázdné adresáře. Je to taková pojistka, abychom si omylem neodstranili něco, čeho bychom litovali. Pokud se v adresáři, který chceme smazat něco nachází, musíme to smazat jako první.

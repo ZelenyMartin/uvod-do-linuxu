@@ -148,7 +148,7 @@ Většina příkazů, která akceptuje jako svůj parametr název souboru, toti�
 
 Příklad vydá za tisíc slov
 
-```shell
+```
 $ grep '##' lesson.md | wc -l
 4
 ```

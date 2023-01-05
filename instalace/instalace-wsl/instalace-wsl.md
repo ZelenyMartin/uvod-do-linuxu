@@ -1,9 +1,9 @@
-I když se jedná o workshop o Linuxu, pravděpodobně většina z vás přichází s operačním systémem Windows 10. Abychom však mohli pracovat s linuxovou příkazovou řádkou, potřebujeme ji mít k dispozici na našem počítači. Způsobem, jak toho můžeme snadno dosáhnout, je použití vestavěné funkcionality operačního systému Windows 10 s názvem _Windows Subsystem for Linux (WSL)_.
+I když se jedná o workshop o Linuxu, pravděpodobně většina z vás přichází s operačním systémem Windows. Abychom však mohli pracovat s linuxovou příkazovou řádkou, potřebujeme ji mít k dispozici na našem počítači. Způsobem, jak toho můžeme snadno dosáhnout, je použití vestavěné funkcionality operačního systému Windows s názvem _Windows Subsystem for Linux (WSL)_.
 
-**POZOR!** Je nezbytné mít nejaktuálnější updatované Windows 10. Na starších Windows než Windows 10 není funkcionalita _WSL_ přítomna.
+**POZOR!** Je nezbytné mít nejaktuálnější updatované Windows. Na starších Windows než Windows 10 není funkcionalita _WSL_ přítomna.
 
-## Instalace WSL na Windows 10
-Budeme následovat oficiální návod na [webu Microsoftu](https://docs.microsoft.com/en-us/windows/wsl/install-win10) a nainstalujeme si nejvyšší verzi _WSL_.
+## Instalace WSL na Windows
+Budeme následovat oficiální návod na [webu Microsoftu](https://learn.microsoft.com/en-us/windows/wsl/install) a nainstalujeme si nejvyšší verzi _WSL_.
 
 ### Automatická instalace
 
@@ -15,7 +15,7 @@ wsl --install
 
 ### Klíčové body manuální instalace
 
-Pokud by se vám z jakéhokoliv důvodu nepodařilo nainstalovat WSL2 pomocí příkazu `wsl --install`, shrnul jsem zde kroky původního postupu.
+Pokud by se vám z jakéhokoliv důvodu nepodařilo nainstalovat WSL2 pomocí příkazu `wsl --install`, shrnul jsem zde kroky [manuálního postupu](https://learn.microsoft.com/en-us/windows/wsl/install-manual).
 
 1. Zapněte funkcionalitu WSL a virtualizace (Step 1 a 3 v oficiálním návodu)
 

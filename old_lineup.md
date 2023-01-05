@@ -2,7 +2,7 @@
 
 Máš mlhavou představu o operačním systému Linux? Víš, že znalost práce v
 příkazové řádce Linuxu ti může otevřít dveře ke spoustě pracovních pozic v
-mnoha IT firmách? Na workshopu si ukážeme zprovoznění Linuxu na Windows 10
+mnoha IT firmách? Na workshopu si ukážeme zprovoznění Linuxu na Windows
 díky WSL 2 a ukážeme si základy práce v příkazové řádce.
 
 ## Pro koho je workshop určen:
@@ -28,7 +28,7 @@ zmiňující Linux a rád by nějaké základy na pohovoru předvedl.
 Workshop si neklade za cíl obracet uživatele Windows na Linux. Je však nutné
 nějakou podobu Linuxu na počítačích účastnic zprovoznit, aby si mohly
 prostředí pro procvičování znalostí „odnést domů". K tomu mohou uživatelé
-Windows 10 využít funkcionalitu _Windows Subsystem for Linux (WSL)_. Pokud
+Windows využít funkcionalitu _Windows Subsystem for Linux (WSL)_. Pokud
 přicházíte přímo s nainstalovaným Linuxem na notebooku, tento krok rovnou
 přeskočíte :-). Stejně jako Linux je i MacOS operační systém _Unixového
 typu_. Proto by většina příkazů probíraných na workshopu měla fungovat i na
@@ -41,17 +41,17 @@ jako _soubor_, _adresář_ a mít pořádek a přehled v adresářové struktuř
 vašem domovském adresáři.
 
 Uživatelé Linuxu a MacOS speciální požadavky řešit nemusí, ale pro uživatele
-Windows je nezbytné mít nejaktuálnější updatované Windows 10, které již
-podporují **WSL 2** (_Windows Subsystem for Linux_ verze _2_). Také bude
-potřeba mít k operačními systému Windows 10 administrátorský přístup (možnost
-instalovat programy).
+Windows je nezbytné mít nejaktuálnější updatované Windows (alespoň Windows
+10), které již podporují **WSL 2** (_Windows Subsystem for Linux_ verze _2_).
+Také bude potřeba mít k operačními systému Windows administrátorský přístup
+(možnost instalovat programy).
 
 ## Agenda:
 
 Během workshopu si zprovozníme Linux, tak abychom měli všichni stejnou
 startovací čáru, na které začneme.
 
-  * Společně si nainstalujeme _WSL 2_ a zprovozníme Linux na Windows 10
+  * Společně si nainstalujeme _WSL 2_ a zprovozníme Linux na Windows
   * Povíme si něco o výhodách práce v příkazové řádce
   * Naučíme se spolehlivě procházet adresářovou strukturu, vytvářet adresáře, přesouvat kopírovat soubory. Budeme znát pojmy jako _absolutní a relativní cesta_
   * Ukážeme si typické příklady práce v příkazové řádce, se kterými uživatel Linuxu přichází do styku

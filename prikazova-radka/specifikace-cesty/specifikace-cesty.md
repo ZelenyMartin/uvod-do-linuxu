@@ -16,8 +16,8 @@ $ ls *.csv
 
 Hvězdičku jsme použili jako zástupný znak, který vyjadřuje libovolnou posloupnost znaků (0-N). Další příklady specifikace souborů:
 ```shell
-ls data1*
-ls *data*
+$ ls data1*
+$ ls *data*
 ```
 
 Další speciální symbol je otazník `?`. Ten specifikuje přesně jeden zástupný znak. Vytvořme si v pracovním adresáři další testovací soubory:
@@ -26,7 +26,7 @@ $ touch data10.csv data100.csv dataAAA.csv dataBBB.csv
 ```
 
 Pomocí následujícího příkazu vylistujeme pouze ty soubory, které mají mezi názvem _data_ a příponou přesně jeden znak:
-```shel
+```shell
 $ ls data?.*
 data1.csv  data1.json  dataA.csv  dataA.json
 ```
