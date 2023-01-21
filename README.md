@@ -1,23 +1,15 @@
 # Úvod do Linuxu
 
-## O čem to celé bude?
+Máš mlhavou představu o operačním systému Linux? Víš, že znalost práce v příkazové řádce Linuxu ti může otevřít dveře ke spoustě pracovních pozic v mnoha IT firmách? Nenech se zmýlit tím, že by byl Linux okrajová záležitost. Spousta firem jej používá jako serverový operační systém. Ať už hledáš práci v oblasti datové analýzy, webového vývoje nebo skriptování automatizovaných testů, základní znalost práce na Linuxových serverech se ti může hodit.
 
-Naučíš se ovládat operační systém Linux, protože ti toto může otevřít dveře ke spoustě pracovních pozic v IT firmách.
+Workshop si neklade za cíl obracet uživatele Windows na Linux. Je však nutné nějakou podobu Linuxu na počítačích zprovoznit, aby bylo možné si prostředí pro procvičování získaných znalostí odnést domů. Pokud používáš Linux nebo macOS, nic řešit nemusíš. Pro uživatele Windows je nezbytné mít nejaktuálnější updatované Windows (alespoň Windows 10), které již podporují **WSL 2** (_Windows Subsystem for Linux_ verze 2).
 
-Zvládneš zprovoznit Linux na Windows. Prozkoumáš příkazovou řádku a naučíš se, jak s ní pracovat i typické příkazy, se kterými se uživatel Linuxu setká. Stejně jako Linux je i MacOS operační systém unixového typu. Proto by většina probíraných příkazů měla fungovat i na počítačích Apple.
+Prerekvizitou workshopu je základní IT přehled. Vědět, co je soubor, adresář a mít pořádek v adresářové struktuře v domovském adresáři. Musíš mít vlastní notebook včetně napájecího zdroje s libovolným operačním systémem (Linux, MacOS, Windows) a administrátorským přístupem (možnost instalovat programy).
 
-### Co se naučíš
+## Osnova workshopu
 
-  * Nainstalovat WSL 2 (Windows Subsystem for Linux verze 2) a zprovoznit Linux na Windows
-  * Výhody práce v příkazové řádce
-  * Procházet adresářovou strukturu, vytvářet adresáře, přesouvat a kopírovat soubory
-  * Absolutní a relativní cestu
-  * Typické příklady práce v příkazové řádce pro uživatele Linuxu
-  * Výhody a rychlost zpracování textových souborů
-  * Zautomatizovat některé činnosti
-
-### Pro koho je kurz určen
-
-  * Pro ženy, které jsou aktivními uživatelkami desktopových prostředí na Linuxu, a rády by pronikly do tajů příkazové řádky, mají zájem o práci v IT, nebo to myslí s Linuxem tak vážně, že si ho už nainstalovaly na svůj počítač
-  * Pro mírně pokročilé absolventky našich dlouhodobých nebo intenzivních kurzů
-  * Znají pojmy jako soubor, adresář a mají pořádek a přehled ve struktuře v domovském adresáři
+* Společně si nainstalujeme WSL 2 a zprovozníme Linux na Windows
+* Povíme si něco o výhodách práce v příkazové řádce a její historii
+* Naučíme se spolehlivě procházet adresářovou strukturu, vytvářet adresáře, přesouvat a kopírovat soubory. Budeme znát pojmy jako absolutní a relativní cesta
+* Ukážeme si typické příklady práce v příkazové řádce, se kterými uživatel Linuxu přichází do styku
+* Představíme si výhody a rychlost zpracování textových souborů
