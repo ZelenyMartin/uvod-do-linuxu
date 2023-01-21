@@ -1,4 +1,5 @@
-title: Specifikace cesty
+title: Specifikace cesty a vyhledávání
 lead: Jak specifikovat více souborů naráz a jak soubory vyhledávat
 sections:
   - specifikace-cesty
+  - vyhledavani-souboru
