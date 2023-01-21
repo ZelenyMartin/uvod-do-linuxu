@@ -46,7 +46,7 @@ Pokud budeme potřebovat specifikovat soubory, které se nachází jinde než v 
 $ find <kde vyhledávám> <co hledám>
 ```
 
-Základní dva parametry, které příkaz `find` akceptuje je:
+Základní dva parametry, které příkaz `find` akceptuje, jsou:
 
 1. Adresář, kde chceme vyhledávat - pokud tento parametr vynecháme, vyhledává se v aktuálním pracovním adresáři
 1. Co hledáme - tady je to trochu složitější, protože zdaleka nemusíme vyhledávat pouze podle názvu souboru. Pokud chceme vyhledávat podle názvu, použijeme parametr `-name` následovaný již známým způsobem cesty specifikovaným pomocí hvězdiček a otazníků. Tento výraz ale musí být v jednoduchých nebo dvojitých uvozovkách! Pro jednoduchost si ukážeme vyhledávání pouze podle názvu, ale dodám jen, že je možné vyhledávat soubory například i podle stáří nebo velikosti.

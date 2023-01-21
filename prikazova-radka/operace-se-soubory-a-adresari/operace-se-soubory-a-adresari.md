@@ -7,7 +7,7 @@ Následující ukázky příkazů obsahují ukázku parametru mezi `<` a `>`. To
 $ touch <soubor>
 ```
 
-Příkazem `touch` (dotknout) vytvoříme prázdný soubor. Prozatím si nemusíme lámat hlavu k čemu nám je vytvářet prázdné soubory. Potřebujeme je jen, abychom viděli i něco jiného než adresáře. Za podivným názvem příkazu `touch` stojí jeho hlavní funkcionalita, a to aktualizace _timestamp_ (časového údaje posledního přístupu k souboru). Toto uvádím jen pro úplnost a více se tím zabývat nemusíme.
+Příkazem `touch` (dotknout) vytvoříme prázdný soubor. Prozatím si nemusíme lámat hlavu, k čemu nám je vytvářet prázdné soubory. Potřebujeme je jen, abychom viděli i něco jiného než adresáře. Za podivným názvem příkazu `touch` stojí jeho hlavní funkcionalita, a to aktualizace _timestamp_ (časového údaje posledního přístupu k souboru). Toto uvádím jen pro úplnost a více se tím zabývat nemusíme.
 
 ```shell
 $ mkdir <adresář>
@@ -20,23 +20,23 @@ $ mkdir -p <adresář>/<podadresář>
 ```
 
 ## Mazání souborů a adresářů
-**Pozor!** Příkazová řádka nemá žádný koš! Cokoliv smažeme pomocí následujících příkazů se nedá nijak obnovit.
+**Pozor!** Příkazová řádka nemá žádný koš! Cokoliv smažeme pomocí následujících příkazů, se nedá nijak obnovit.
 
 ```shell
 $ rm <soubor>
 ```
 
-Prostě odstraníme soubor (remove). V některých prostředích se však může příkaz `rm` volat ve skutečnosti jako `rm -i`, kde se nám zobrazí otázka, jestli opravdu chceme tento příkaz odstranit a my na ni musíme odpovědět `y` (yes).
+Prostě odstraníme soubor (remove). V některých prostředích se však může příkaz `rm` volat ve skutečnosti jako `rm -i`, kde se nám zobrazí otázka, jestli opravdu chceme tento příkaz odstranit, a my na ni musíme odpovědět `y` (yes).
 
 ```
 $ rmdir <prázdný adresář>
 ```
-Tímto odstraníme adresář (remove directory). Pozor - příkaz funguje pouze na prázdné adresáře. Je to taková pojistka, abychom si omylem neodstranili něco, čeho bychom litovali. Pokud se v adresáři, který chceme smazat něco nachází, musíme to smazat jako první.
+Tímto odstraníme adresář (remove directory). Pozor - příkaz funguje pouze na prázdné adresáře. Je to taková pojistka, abychom si omylem neodstranili něco, čeho bychom litovali. Pokud se v adresáři, který chceme smazat, něco nachází, musíme to smazat jako první.
 
 ```shell
 $ rm -r <adresář se soubory>
 ```
-Jistě se vám taková pojistka zdá dost omezující. Vyřešit se to dá příkazem `rm -r`, který aplikujeme na adresář se soubory, který chceme smazat. Parametr `-r` znamená _rekurzivně_. Pod tímto slovem si představme, že se mazací operace aplikuje nejprve na vše co je uvnitř a pak na adresář samotný. A pokud se v tomto adresář opět nachází adresář s nějakým obsahem? Operace se zas opakuje. To je význam slova _rekurze_.
+Jistě se vám taková pojistka zdá dost omezující. Vyřešit se to dá příkazem `rm -r`, který aplikujeme na adresář se soubory, který chceme smazat. Parametr `-r` znamená _rekurzivně_. Pod tímto slovem si představme, že se mazací operace aplikuje nejprve na vše, co je uvnitř, a pak na adresář samotný. A pokud se v tomto adresář opět nachází adresář s nějakým obsahem? Operace se zas opakuje. To je význam slova _rekurze_.
 
 Poslední věc z oblasti mazání souborů a adresářů je velmi silná kombinace:
 
@@ -44,7 +44,7 @@ Poslední věc z oblasti mazání souborů a adresářů je velmi silná kombina
 $ rm -rf <adresář se soubory>
 ```
 
-Tento příkaz rekurzivně smaže vše co mu předhodíme a na nic se nás ptát nebude (`-f` znamená force)
+Tento příkaz rekurzivně smaže vše, co mu předhodíme, a na nic se nás ptát nebude (`-f` znamená force)
 
 Příkazy pro vytváření a mazání umí pracovat i s více parametry. Pokud chceme naráz vytvořit více souboru příkazem `touch` nebo více adresářů příkazem `mkdir`, můžeme jejich názvy naskládat jako parametry příkazové řádky za sebe spustit jedním stiskem klávesy :kbd[Enter]. Stejně funguje i jejich mazání pomocí `rm` či `rmdir`.
 
@@ -55,7 +55,7 @@ Poslední základní znalost práce se soubory a adresáři v linuxové příkaz
 $ cp <soubor> <cíl>
 ```
 
-Kopírování provádíme příkaze `cp`, který má dva povinné parametry a to, soubor, který chceme kopírovat a kam to chceme nakopírovat (do jakého adresáře).
+Kopírování provádíme příkaze `cp`, který má dva povinné parametry, a to soubor, který chceme kopírovat, a kam to chceme nakopírovat (do jakého adresáře).
 
 Alternativně funguje tento příkaz k vytvoření kopie souboru, pokud jako parametr _cíl_ není zvolen existující adresář, ale nový název souboru.
 
@@ -63,7 +63,7 @@ Alternativně funguje tento příkaz k vytvoření kopie souboru, pokud jako par
 $ cp -r <adresář> <cíl>
 ```
 
-Podobně jako u mazání příkaz `cp` automaticky nepřesouvá celé adresářové struktury. Pokud toho chceme docílit musíme použít parametr `-r` (kopíruj rekurzivně).
+Podobně jako u mazání příkaz `cp` automaticky nepřesouvá celé adresářové struktury. Pokud toho chceme docílit, musíme použít parametr `-r` (kopíruj rekurzivně).
 
 ```shell
 $ mv <zdroj> <cíl>
@@ -73,7 +73,7 @@ Příkaz `mv` má dvě základní funkce:
 * Přesun souboru nebo adresáře do jiného adresáře (move), pokud je cíl existující adresář
 * Přejmenování souboru nebo adresáře na cílové jméno
 
-U příkazů pro kopírování a přesun může být parametrů co se má kopírovat více, jak poslední musí být vždy cílový adresář.
+U příkazů pro kopírování a přesun může být parametrů, co se má kopírovat, více, jako poslední musí být vždy cílový adresář.
 
 
 ## Jak to hezky zobrazit

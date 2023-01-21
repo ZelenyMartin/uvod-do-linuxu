@@ -4,7 +4,7 @@ Pokud se vám už ze všech příkazů a jejich parametrů točí hlava, v této
 
 Pokud se vám zatím zdá, že práce v linuxové příkazové řádce spočívá především v tom pamatovat si všechny příkazy a všechny jejich parametry, ujistím vám, že tak to rozhodně není. Příkazů v Linuxu existuje nesmírně velké množství a s každou novou verzí nějaké distribuce přichází nové programy a naopak zastaralé programy se přestávají používat.
 
-Abychom v tom všem měli přehled, velká většina příkazů má i svou vlastní manuálovou stránku. Manuál zobrazíme programem `man`. Doposud všechny příkazy, které jsme zkoušeli fungovaly tak, že něco udělaly (např. `cp`, `mv`, `mkdir`) popř. něco vypsaly na terminál (`ls`, `pwd`). Program `man` funguje tak, že na celé okno terminálu zobrazí příslušnou manuálovou stránku a náš důvěrně známy prompt nám zmizí.
+Abychom v tom všem měli přehled, velká většina příkazů má i svou vlastní manuálovou stránku. Manuál zobrazíme programem `man`. Doposud všechny příkazy, které jsme zkoušeli, fungovaly tak, že něco udělaly (např. `cp`, `mv`, `mkdir`) popř. něco vypsaly na terminál (`ls`, `pwd`). Program `man` funguje tak, že na celé okno terminálu zobrazí příslušnou manuálovou stránku a náš důvěrně známý prompt nám zmizí.
 
 Vyzkoušejte si zobrazit manuálovou stránku některého příkazu, který jsme si dosud ukázali, např.
 
@@ -51,7 +51,7 @@ S největší pravděpodobností jako většina začátečníků nebudete mít m
 * Rychlost - manuál je skutečně brán jako příručka, kterou berete do ruky a rychle v ní vyhledáte to, co potřebujete najít. Nemusíte opouštět terminál, protože si chcete jen zobrazit konkrétní část nějaké manuálové stránky, kterou jste si už zobrazili stokrát a ještě tisíckrát si ji v budoucnu zobrazíte. Nikdo po vás nechce se něco učit nazpaměť, když máme manuál.
 * Kompaktnost a úplnost - manuálová stránka není nikdy příliš dlouhá. Příklady použití bývají pouze u některých příkazů. Přesto se můžete spolehnout, že seznam argumentů bude kompletní.
 
-I když budete možná s manuálem bojovat, dejte mu občas šanci. Pokud si přeci jen zjistíte co potřebujete přes Google na Stack Overflow, vraťte se do manuálu a pokuste se informaci ověřit i tam. Časem mu jistě přijdete na chuť.
+I když budete možná s manuálem bojovat, dejte mu občas šanci. Pokud si přeci jen zjistíte, co potřebujete, přes Google a Stack Overflow, vraťte se do manuálu a pokuste se informaci ověřit i tam. Časem mu jistě přijdete na chuť.
 
 
 ### Ovládání manuálu
@@ -66,7 +66,7 @@ $ man -k <slovo>
 
 ### Syntaxe příkazů podle manuálu
 
-Na začátku každé manuálové stránky hned po názvu je odstavec _SYNOPSIS_. U této části popíšu obvyklou konvenci jak se příkazy zapisují. Některé příkazy vyžadují nějaký argument, jinak by jejich vykonání nemělo smysl, např. `touch` nebo `mkdir`. Tuto informaci se dozvíte v odstavci SYNOPSIS (nebo pokud příkaz chybně spustíte).
+Na začátku každé manuálové stránky hned po názvu je odstavec _SYNOPSIS_. U této části popíšu obvyklou konvenci, jak se příkazy zapisují. Některé příkazy vyžadují nějaký argument, jinak by jejich vykonání nemělo smysl, např. `touch` nebo `mkdir`. Tuto informaci se dozvíte v odstavci SYNOPSIS (nebo pokud příkaz chybně spustíte).
 
 V jiných případech jsou zde uvedeny příklady volitelných argumentů:
 
