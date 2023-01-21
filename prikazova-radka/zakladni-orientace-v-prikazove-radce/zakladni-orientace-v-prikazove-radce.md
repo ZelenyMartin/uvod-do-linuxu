@@ -1,7 +1,7 @@
-Pokud už před sebou vidíme spuštěné okno s terminálem, řekneme si co si v něm můžeme přečíst a hlavě co do něj můžeme napsat.
+Pokud už před sebou vidíme spuštěné okno s terminálem, řekneme si, co si v něm můžeme přečíst a hlavně, co do něj můžeme napsat.
 
 ## Prompt
-První text, který v okně terminálu vidíme je tzv. _prompt_ (anglicky výzva, pobídka). V promptu nám operační systém sděluje nějaké základní důležité informace, abychom je měli vždy na očích. Formát promptu není pevně dán a různé distribuce Linuxu a MacOS zde mohou vypisovat různé informace. Stejně tak si později můžeme prompt nastavit sami tak, aby nám vyhovoval. Nejčastěji je zde uživatelské jméno přihlášeného uživatele, název počítače a pracovní adresář (popř. celá cesta), kde se uživatel nachází. Znak `~` (tilda) je zástupný symbol pro náš domovský adresář.
+První text, který v okně terminálu vidíme, je tzv. _prompt_ (anglicky výzva, pobídka). V promptu nám operační systém sděluje nějaké základní důležité informace, abychom je měli vždy na očích. Formát promptu není pevně dán a různé distribuce Linuxu a MacOS zde mohou vypisovat různé informace. Stejně tak si později můžeme prompt nastavit sami tak, aby nám vyhovoval. Nejčastěji je zde uživatelské jméno přihlášeného uživatele, název počítače a pracovní adresář (popř. celá cesta), kde se uživatel nachází. Znak `~` (tilda) je zástupný symbol pro náš domovský adresář.
 
 
 ## Nejdůležitější klávesy
@@ -28,7 +28,7 @@ $ ls -l
 $ ls -la
 ```
 
-Příkaz `ls` vypíše seznam souborů a adresářů v aktuálním pracovním adresáři (list). Jedná se o jeden z nejpoužívanějších příkazů při práci v příkazové řádce. Pokud se nám nelíbí, že se obsah vypsal vedle sebe, ale chtěli ho bychom viděl raději pod sebou, použijeme :term{cs="přepínač" en="switch"} `-l` (long), který nám navíc vypíše spoustu další užitečných informací.
+Příkaz `ls` vypíše seznam souborů a adresářů v aktuálním pracovním adresáři (list). Jedná se o jeden z nejpoužívanějších příkazů při práci v příkazové řádce. Pokud se nám nelíbí, že se obsah vypsal vedle sebe, ale chtěli ho bychom vidět raději pod sebou, použijeme :term{cs="přepínač" en="switch"} `-l` (long), který nám navíc vypíše spoustu další užitečných informací.
 
 Přepínač `-a` (all) navíc vypíše i takové podivné věci jako `.` (tečka) a `..` (dvě tečky). To jsou podobně jako `~` další zástupné symboly a značí
 
@@ -38,7 +38,7 @@ Přepínač `-a` (all) navíc vypíše i takové podivné věci jako `.` (tečka
 Pro úplnost dodám, že přepínač `ls -a` vypíše i soubory a adresáře začínající tečkou, což je konvence pro "skryté soubory a adresáře".
 
 ### Přepínače, parametry, argumenty
-Nyní jsme si ukázali, že můžeme chování nějakého příkazu upravit pomocí přepínačů. Pokud chceme zkombinovat přepínače `-l` a `-a` příkazu `ls` ušetříme pár znaků zápisem `ls -la`. Na pořadí přepínačů v tomto případě nezáleží, tzn. funguje i `ls -al`.
+Nyní jsme si ukázali, že můžeme chování nějakého příkazu upravit pomocí přepínačů. Pokud chceme zkombinovat přepínače `-l` a `-a` příkazu `ls`, ušetříme pár znaků zápisem `ls -la`. Na pořadí přepínačů v tomto případě nezáleží, tzn. funguje i `ls -al`.
 
 Jednopísmenné přepínač příkazů se uvozují pomlčkou/minusem a jedná se opět o konvenci napříč všemi příkazy a programy v linuxové příkazové řádce. Pokud některé přepínače nejsou vyjádřeny pouze jedním písmenem, ale celým slovem (nebo více slovy), uvozují se dvěma pomlčkami/minusy. Někdy mají jednopísmenné přepínače i svou dlouhou variantu, která děla to samé (např. `-a` a `--all`).
 
@@ -89,7 +89,7 @@ Absolutní a relativní cestu zmiňujeme z toho důvodu, že mnoho příkazů o�
 
 Jedním z těchto příkazů je i již zmíněný příkaz `ls`, který umí zobrazit obsah adresáře na dané cestě. Tato cesta může být uvedena jak absolutní, tak relativní. Pouze pokud tento parametr není uveden, zobrazí se obsah pracovního adresáře.
 
-Samotnou změnu pracovního adresáře provedeme příkazem `cd` (Change Directory), kde jako parametr příkazu napíšeme cestu k adresáři kam se chceme přesunout. Pokud toto vynecháme a spustíme příkaz `cd` bez parametru, přesuneme se do našeho domovského adresáře (jako kdybychom napsali `cd ~`).
+Samotnou změnu pracovního adresáře provedeme příkazem `cd` (Change Directory), kde jako parametr příkazu napíšeme cestu k adresáři, kam se chceme přesunout. Pokud toto vynecháme a spustíme příkaz `cd` bez parametru, přesuneme se do našeho domovského adresáře (jako kdybychom napsali `cd ~`).
 
 Uvedeme si pár příkladů:
 * `cd Dokumenty` přesun do adresáře `Dokumenty`

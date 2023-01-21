@@ -15,7 +15,7 @@ $ cat lesson.md
 
 Název příkazu `cat` nemá nic společného s kočkou. Jedná se o zkratku anglického výrazu _concatenate_, což znamená pospojovat nebo zřetězit. Příkaz `cat` umí nejen vypsat jeden soubor, ale všechny soubory, které jsou mu předány jako parametry příkazové řádky.
 
-Pro ukázku k čemu je to dobré si stáhněme další testovací soubory.
+Pro ukázku, k čemu je to dobré, si stáhněme další testovací soubory.
 
 ```shell
 $ wget https://kodim.cz/cms/assets/kurzy/uvod-do-linuxu/prikazova-radka/prohlizeni-textovych-souboru/data1.txt
@@ -66,7 +66,7 @@ Pokud bychom chtěli původní obsah souboru zachovat a zapsat nový text až na
 
 ## Přehlednější zobrazení souboru
 
-Vrátíme-li se k příkladu vypsání obsahu souboru `lesson.md`, uvidíme, že pokud je počet řádků souboru větší než výška našeho terminálu, musím na začátek souboru scrollovat kolečkem. Někdy je tento způsob dost nepřehledný, protože se nám začátek textového souboru vizuálně smísí s předchozím textem v našem terminálu a nevidíme pořádně, kde soubor vlastně začíná.
+Vrátíme-li se k příkladu vypsání obsahu souboru `lesson.md`, uvidíme, že pokud je počet řádků souboru větší než výška našeho terminálu, musíme na začátek souboru scrollovat kolečkem. Někdy je tento způsob dost nepřehledný, protože se nám začátek textového souboru vizuálně smísí s předchozím textem v našem terminálu a nevidíme pořádně, kde soubor vlastně začíná.
 
 Abychom si pomohli, představíme si další příkazy pro prohlížení souborů.
 
@@ -99,7 +99,7 @@ $ less lesson.md
 
 ## Další nejzákladnější příkazy nad soubory
 
-Umíme už vypsat celý soubor pomocí příkazu `cat` a umíme vypsat začátek pomocí `head` a konec díky `tail`. Nyní si ukážeme jak textový soubor prohledávat.
+Umíme už vypsat celý soubor pomocí příkazu `cat`, a umíme vypsat začátek pomocí `head` a konec díky `tail`. Nyní si ukážeme jak textový soubor prohledávat.
 
 K tomu nám poslouží program `grep`.
 
@@ -109,7 +109,7 @@ K tomu nám poslouží program `grep`.
 $ grep <co hledávám> <název souboru>
 ```
 
-Grep budeme používat s dvěma hlavními parametry, a to jako první parametr hledaný řetězec a jako druhý parametr bude název souboru, který se má prohledávat. Program `grep` neumí jen prosté vyhledávání řetězců v textovém souboru. Jeho hlavní síla tkví ve využití :term{cs="regulárních výrazů" en="Regular expression"}. Jedná se však o pokročilou část, kterou nebudeme v úvodním kurzu probírat.
+Grep budeme používat s dvěma hlavními parametry, a to jako první parametr hledaný řetězec, a jako druhý parametr bude název souboru, který se má prohledávat. Program `grep` neumí jen prosté vyhledávání řetězců v textovém souboru. Jeho hlavní síla tkví ve využití :term{cs="regulárních výrazů" en="Regular expression"}. Jedná se však o pokročilou část, kterou nebudeme v úvodním kurzu probírat.
 
 Při ukázce použití programu `grep` se vrátíme ke zdrojovému kódu lekce ve formátu Markdown. Markdown formátování kapitol začíná znakem _hash_ `#` (a nadpis druhé úrovně je vyjádřen dvěma mřížkami `##`). Pozor: hledaný text `##` zde musíme uzavřít do uvozovek (jedno jestli jednoduchých nebo dvojitých). V linuxovém shellu je znak `#` považován za začátek komentáře, a tak by se nám zbytek příkazu ignoroval. Komentáře se tedy zapisují stejně jako např. v jazyce Python.
 

@@ -217,11 +217,11 @@ Taylor.Murphy
 Owen.Vass
 ```
 
-První znak je požadovaný příkaz `s` (substitute), následuje oddělovač lomítko `/`, potom co chceme najít (mezeru) a za dalším lomítkem napíšeme na co ji chceme změnit (tečka). Na konci nezapomeneme na uzavírací lomítko.
+První znak je požadovaný příkaz `s` (substitute), následuje oddělovač lomítko `/`, potom co chceme najít (mezeru) a za dalším lomítkem napíšeme, na co ji chceme změnit (tečka). Na konci nezapomeneme na uzavírací lomítko.
 
 Lepší příklad bude nahrazení celého slova _tým_ za anglické _team_
 
-**Pozor!** Parametr `-i` příkazu `sed` přepíše soubor se kterým pracuje (in-place).
+**Pozor!** Parametr `-i` příkazu `sed` přepíše soubor, se kterým pracuje (in-place).
 
 ```shell
 $ sed -i 's/tým/team/' tymy.txt
@@ -230,7 +230,7 @@ $ sed -i 's/tým/team/' tymy.txt
 
 ## Řezání sloupců
 
-V této části si povíme něco o zjednoduššení možné práce např. s CSV soubory. Pro ukázku využijeme pracovní data s předchozího cvičení.
+V této části si povíme něco o zjednoduššení možné práce např. s CSV soubory. Pro ukázku využijeme pracovní data z předchozího cvičení.
 
 Pro vyřezávání sloupců slouží příkaz `cut`. Pro práci s CSV se nejčastěji využívá v kombinaci s parametry `-d` (delimiter) udávající oddělovač polí v CSV a `-f` (field) s číslem pole pro výřez.
 
@@ -321,7 +321,7 @@ Ve zbytku kapitoly uvedu další ukázky, které je možné v linuxové příkaz
 
 ### Další možnosti příkazů head a tail
 
-Vraťme se zpět k filtrování řádků. Víme, že k tomu můžeme použít program `grep`, pokud chceme vyhledat nějaký výskyt řetězce na řádku. Pokud chceme filtrovat podle čísla řádku, můžeme využít `head` nebo `tail`. Doposud jsme specifikovali kolik chceme nechat řádků za začátku souboru nebo na konci souboru. Můžeme však i opačně říct, že chceme smazat určitý počet řádku z konce (`head` a číslo s prefixem `-`) nebo vypsat vše od určitého řádku do konce (`tail` a číslo s prefixem `+`).
+Vraťme se zpět k filtrování řádků. Víme, že k tomu můžeme použít program `grep`, pokud chceme vyhledat nějaký výskyt řetězce na řádku. Pokud chceme filtrovat podle čísla řádku, můžeme využít `head` nebo `tail`. Doposud jsme specifikovali, kolik chceme nechat řádků za začátku souboru nebo na konci souboru. Můžeme však i opačně říct, že chceme smazat určitý počet řádků z konce (`head` a číslo s prefixem `-`) nebo vypsat vše od určitého řádku do konce (`tail` a číslo s prefixem `+`).
 
 Ekvivalentem k příkazu `sed '1d'` pro smazání hlavičky CSV souboru je také `tail -n +2`. Tento příkaz nám říká: vypiš konec souboru od řádku 2 dál. Co to znamená a jak to funguje si ukážeme na řadě čísel:
 
@@ -373,7 +373,7 @@ Důležité je si zapamatovat, že `head` vždy vypisuje začátek souboru a `ta
 
 ### awk
 
-Nejpokročilejším nástrojem, který si zde představíme je program `awk`. Z doposud představených nástrojů má nejdelší manuálovou stránku. Jedná se interpret programovacího jazyka, který je určen pro práci s tabulkovými daty. Nástroje jako `sed` a `awk` už jsou pokročilejší věci, ale jejich použití pro složité problémy nemusí být vždy nejlepší volba. Dnes jdou některé úkoly řešit snadněji pomocí jazyka Python a jeho knihovny Pandas.
+Nejpokročilejším nástrojem, který si zde představíme, je program `awk`. Z doposud představených nástrojů má nejdelší manuálovou stránku. Jedná se interpret programovacího jazyka, který je určen pro práci s tabulkovými daty. Nástroje jako `sed` a `awk` už jsou pokročilejší věci, ale jejich použití pro složité problémy nemusí být vždy nejlepší volba. Dnes jdou některé úkoly řešit snadněji pomocí jazyka Python a jeho knihovny Pandas.
 
 Výhoda `awk` podobně jako programu `sed` je však ta, že pracuje jako filtr a využívá unixový způsob práce se standardním textovým vstupem a výstupem a jeho propojení rourami. Tím se může plně integrovat se všemi ostatními nástroji, které jsme prozatím probrali.
 
@@ -440,4 +440,4 @@ $ awk 'length($2) == 3 {print $0}' data.txt
 
 Číslo uvozená znakem dolar `$` značí příslušné políčko v řádku (čísluje se zde od 1). `$0` znamená celý řádek.
 
-Důležité je vědět, že síla programů `sed`, `awk` (a např. i `grep`) vyzní až s použitím regulárních výrazů. Nevadí pokud jste programem `awk` spíše zmateni. Stačí si zapamatovat, že něco takového existuje. Programovací úsilí směřujte více např. k jazyku Python.
+Důležité je vědět, že síla programů `sed`, `awk` (a např. i `grep`) vyzní až s použitím regulárních výrazů. Nevadí, pokud jste programem `awk` spíše zmateni. Stačí si zapamatovat, že něco takového existuje. Programovací úsilí směřujte více např. k jazyku Python.

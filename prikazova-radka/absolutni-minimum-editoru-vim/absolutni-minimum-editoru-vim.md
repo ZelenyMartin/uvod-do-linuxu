@@ -1,6 +1,6 @@
 Na konci se podíváme na velmi mocný textový editor pro prostředí příkazové řádky.
 
-Většina příkazů, které jsme si ukázali pracovala v režimu standardního textového vstupu a výstupu. Většinou něco vypsaly na terminál (`ls`, `pwd`) nebo něco udělaly (`cd`, `cp`, `mv`). Občas očekávaly nějaký standardní vstup poslaný rourou z jiného příkazu (např. `tr`) a jejich chování se obvykle řídilo parametry příkazové řádky.
+Většina příkazů, které jsme si ukázali, pracovala v režimu standardního textového vstupu a výstupu. Většinou něco vypsaly na terminál (`ls`, `pwd`) nebo něco udělaly (`cd`, `cp`, `mv`). Občas očekávaly nějaký standardní vstup poslaný rourou z jiného příkazu (např. `tr`) a jejich chování se obvykle řídilo parametry příkazové řádky.
 
 Výjimku v tomto měly nástroje `less` a `man`, které zabraly celé dostupné okno terminálu a zobrazily na něj soubor nebo manuálovou stránku. Program `less` nám však dovoloval pouze soubor prohlížet. Pokud bychom potřebovali nějaký soubor upravit, popř. vytvořit nový soubor s nějakým obsahem, budeme potřebovat textový editor.
 
@@ -15,7 +15,7 @@ Editor VIM vznikl jako následovník staršího editoru Vi, který se používal
 U vimu rozlišujeme 3 hlavní režimy práce:
 
 * Editační mód (Normal mode)
-    * Slouží pohyb kurzoru, přesouvání částí textu
+    * Slouží k pohybu kurzoru, přesouvání částí textu
     * V tomto režimu není možné psát text
     * Výchozí mód při spuštění VIMu
     * Vstup do editačního módu: klávesa :kbd[Esc]
@@ -30,7 +30,7 @@ U vimu rozlišujeme 3 hlavní režimy práce:
 
 ## Jak to spustím a jak to vypnu
 
-Editor VIM spustíme příkazem `vim`. Zobrazí se nám "Welcome screen", kde si můžeme povšimnout dobré rady jak editor vlastně ukončit. Editor zavřeme vstupem do příkazového módu pomocí dvojtečky :kbd[:] následované příkazem :kbd[q] a :kbd[Enter].
+Editor VIM spustíme příkazem `vim`. Zobrazí se nám "Welcome screen", kde si můžeme povšimnout dobré rady, jak editor vlastně ukončit. Editor zavřeme vstupem do příkazového módu pomocí dvojtečky :kbd[:] následované příkazem :kbd[q] a :kbd[Enter].
 
 Vyzkoušejte si několikrát otevřít a bezpečně zavřít prázdný editor VIM.
 
@@ -60,7 +60,7 @@ $ vim
 utf-8 unix  [No Name]                              0/1   1
 ```
 
-Pokud chceme v editoru něco napsat, zmáčkneme klávesu :kbd[i], která nás přepne do INSERT módu. V tu chvíli klávesy dělají to co od nich očekáváme - text se zobrazuje v okně editoru. Znak tilda `~` zde znamená prázdný řádek.
+Pokud chceme v editoru něco napsat, zmáčkneme klávesu :kbd[i], která nás přepne do INSERT módu. V tu chvíli klávesy dělají to, co od nich očekáváme - text se zobrazuje v okně editoru. Znak tilda `~` zde znamená prázdný řádek.
 
 ```
   1 Ahoj vime!                                             
