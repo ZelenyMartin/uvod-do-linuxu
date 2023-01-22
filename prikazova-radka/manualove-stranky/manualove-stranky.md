@@ -75,3 +75,6 @@ V jiných případech jsou zde uvedeny příklady volitelných argumentů:
 
 Zmínil jsem, že pokud nenastavíme příkaz dobře (např. vynecháme povinný argument), příkaz po spuštění nic neudělá, ale často nám vypíše nápovědu. Tuto nápovědu můžeme podle konvence zobrazit pomocí parametru `-h` nebo `--help`.
 
+
+## Cvičení
+::exc[excs>cteni-manualu]
