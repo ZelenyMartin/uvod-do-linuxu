@@ -10,7 +10,7 @@ $ wget https://raw.githubusercontent.com/ZelenyMartin/uvod-do-linuxu/main/prikaz
 Příkaz pro vypsání obsahu souboru se jmenuje `cat`.
 
 ```shell
-$ cat lesson.md
+$ cat specifikace-cesty.md
 ```
 
 Název příkazu `cat` nemá nic společného s kočkou. Jedná se o zkratku anglického výrazu _concatenate_, což znamená pospojovat nebo zřetězit. Příkaz `cat` umí nejen vypsat jeden soubor, ale všechny soubory, které jsou mu předány jako parametry příkazové řádky.

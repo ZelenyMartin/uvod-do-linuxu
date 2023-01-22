@@ -154,7 +154,7 @@ Příkazy, které už umíme jako `:w` a `:q` je možné i zkombinovat do jednoh
 
 Vyhledávání zapneme klávesou lomítko :kbd[/] v editačním módu a napíšeme text, který chceme v souboru vyhledat. Na další výskyt vyhledávaného řetězce se přesuneme pomocí :kbd[n] a na předchozí pomocí :kbd[N]. Toto funguje stejně jako v programech `less` a `man`.
 
-VIM je profesionální editor pro editaci programů a konfiguračních souborů. Je velmi ergonomický, protože při jeho používání není nutné, aby prsty opustily prostřední řadu klávesnice. Není nutné používat kurzorové šipky, navigační blok nebo myš. Pohyb kurzoru a editace existujícího testu se provádí v editačním módu (Normal mode).
+VIM je profesionální editor pro editaci programů a konfiguračních souborů. Je velmi ergonomický, protože při jeho používání není nutné, aby prsty opustily prostřední řadu klávesnice. Není nutné používat kurzorové šipky, navigační blok nebo myš. Pohyb kurzoru a editace existujícího textu se provádí v editačním módu (Normal mode).
 
 Pokud vám editor VIM přijde děsivý, je důležité vědět, že po vás nikdo nevyžaduje, abyste ho používali výlučně. Pro dobrou znalost práce v linuxové příkazové řádce je však velmi vhodné znát alespoň minimum editoru VIM. Je důležité znát alespoň:
 
