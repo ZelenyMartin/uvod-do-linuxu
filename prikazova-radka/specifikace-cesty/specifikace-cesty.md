@@ -34,4 +34,4 @@ data1.csv  data1.json  dataA.csv  dataA.json
 Tento způsob nahrazování znaků v názvech souborů a adresářů se nazývá _glob_.
 
 ## Cvičení
-::exc[excs>glob]
+::exc[excs/glob]

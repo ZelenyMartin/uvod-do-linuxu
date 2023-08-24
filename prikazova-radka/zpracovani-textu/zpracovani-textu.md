@@ -312,4 +312,4 @@ Zbořilová
 ```
 
 ## Cvičení
-::exc[excs>history]
+::exc[excs/history]

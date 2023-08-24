@@ -102,4 +102,4 @@ Všechny přesuny si můžeme kontrolovat tak, že se nám aktuální pracovní 
 Zmíním ještě hezký tip, který nám pomůže, pokud uděláme v cestě chybu a pracovní adresář se nám změní na nějaký, který jsme nechtěli: pro přesun do adresáře, který byl našim předchozím pracovním adresářem napíšeme `cd -`.
 
 ## Cvičení
-::exc[excs>cviceni]
+::exc[excs/cviceni]

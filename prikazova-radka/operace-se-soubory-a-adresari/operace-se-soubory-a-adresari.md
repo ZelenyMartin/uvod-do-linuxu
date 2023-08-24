@@ -84,5 +84,5 @@ $ tree
 Pokud se vám zdá že práce se soubory a adresáři je v prostředí příkazové řádky nesmírně nepřehledná věc, vyzkoušejte příkaz `tree`, který vám vytiskne obsah všech adresářů v nižších úrovních do přehledné stromové struktury. Pokud příkaz `tree` ve svém prostředí nemáte, budete si ho muset doinstalovat.
 
 ## Cvičení
-::exc[excs>vytvareni]
-::exc[excs>presouvani]
+::exc[excs/vytvareni]
+::exc[excs/presouvani]

@@ -77,4 +77,4 @@ Zmínil jsem, že pokud nenastavíme příkaz dobře (např. vynecháme povinný
 
 
 ## Cvičení
-::exc[excs>cteni-manualu]
+::exc[excs/cteni-manualu]

@@ -124,7 +124,7 @@ $ grep '##' lesson.md
 Program `grep` má také mnoho užitečných přepínačů. Např. `grep -i` ignoruje velikost písmen v hledaném textu nebo `grep -v` invertuje výběr (vypíše naopak řádky, které neobsahují hledaný výraz).
 
 ## Cvičení
-::exc[excs>spojovani]
+::exc[excs/spojovani]
 
 ### wc
 
