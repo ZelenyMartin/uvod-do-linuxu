@@ -11,7 +11,7 @@ Budeme následovat oficiální návod na [webu Microsoftu](https://learn.microso
 
 Otevřeme si příkazovou řádku Windows a spustíme příkaz
 
-```
+```shell
 wsl --install
 ```
 

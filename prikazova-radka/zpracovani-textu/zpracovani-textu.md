@@ -173,7 +173,7 @@ owen vass
 
 Nejdůležitější je si uvědomit, že program `tr` funguje podle jednotlivých znaků. Pro další ukázku si vytvoříme testovací soubor s tímto obsahem:
 
-```
+```shell
 tým 1
 tým 2
 tým 3

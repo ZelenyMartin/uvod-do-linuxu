@@ -38,7 +38,7 @@ Vyzkoušejte si několikrát otevřít a bezpečně zavřít prázdný editor VI
 $ vim
 ```
 
-```
+```shell
   1                                                        
 ~                                                          
 ~                                                          
@@ -62,7 +62,7 @@ utf-8 unix  [No Name]                              0/1   1
 
 Pokud chceme v editoru něco napsat, zmáčkneme klávesu :kbd[i], která nás přepne do INSERT módu. V tu chvíli klávesy dělají to, co od nich očekáváme - text se zobrazuje v okně editoru. Znak tilda `~` zde znamená prázdný řádek.
 
-```
+```shell
   1 Ahoj vime!                                             
 ~                                                          
 ~                                                          
@@ -87,7 +87,7 @@ utf-8 unix  [No Name] +                            1/1  11
 
 Pokud jsme něco napsali, ale text nechceme ukládat do souboru, musíme VIM ukončit příkazem `:q!`, abychom dali najevo, že opravdu nechceme soubor ukládat.
 
-```
+```shell
   1 Ahoj vime!                                             
 ~                                                          
 ~                                                          
@@ -112,7 +112,7 @@ utf-8 unix  [No Name] +                            1/1  10
 
 V opačném případě musíme soubor uložit příkazem `:w <název souboru>`.
 
-```
+```shell
   1 Ahoj vime!                                             
 ~                                                          
 ~                                                          

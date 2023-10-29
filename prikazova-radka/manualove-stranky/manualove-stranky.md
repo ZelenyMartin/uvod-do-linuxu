@@ -14,7 +14,7 @@ $ man ls
 
 Zobrazí se nám
 
-```
+```shell
 LS(1)                    User Commands                    LS(1)
 
 NAME
