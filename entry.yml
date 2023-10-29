@@ -1,6 +1,6 @@
 title: Úvod do Linuxu
 lead: Workshop přibližující základy práce v linuxové příkazové řádce
-image: assets/Gnulinux.svg
+image: assets/tux.svg
 chapters:
   - instalace
   - prikazova-radka

@@ -13,7 +13,10 @@ Než se vrhneme na příkazy povíme si něco o velmi důležitých klávesách,
 
 
 ## První příkazy
-**POZOR!** Symbol dolaru na začátku příkazu se do terminálu nepíše. Jedná se o všeobecně rozšířenou konvenci v psaní návodů a dokumentace, abychom odlišili, že se jedná o příkaz v terminálu.
+
+:::warn
+Symbol dolaru na začátku příkazu se do terminálu nepíše. Jedná se o všeobecně rozšířenou konvenci v psaní návodů a dokumentace, abychom odlišili, že se jedná o příkaz v terminálu.
+:::
 
 ### Kde se nacházím a co tam je?
 ```shell

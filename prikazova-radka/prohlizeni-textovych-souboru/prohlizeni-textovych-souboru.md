@@ -55,7 +55,9 @@ $ cat data*
 
 Pomocí znaku "větší než", který si nyní představme jako šipku, můžeme výpis přesměrovat do nového souboru, který si pojmenujeme např. `data_all.txt`.
 
-**POZOR!** Pokud by náhodou soubor `data_all.txt` už existoval, bude jeho obsah následujícím příkazem nemilosrdně bez jakékoliv ujišťujícího dotazu přepsán.
+:::warn
+Pokud by náhodou soubor `data_all.txt` už existoval, bude jeho obsah následujícím příkazem nemilosrdně bez jakékoliv ujišťujícího dotazu přepsán.
+:::
 
 ```shell
 $ cat data1.txt data2.txt > data_all.txt
