@@ -1,6 +1,6 @@
 Na konci se podíváme na velmi mocný textový editor pro prostředí příkazové řádky.
 
-Většina příkazů, které jsme si ukázali, pracovala v režimu standardního textového vstupu a výstupu. Většinou něco vypsaly na terminál (`ls`, `pwd`) nebo něco udělaly (`cd`, `cp`, `mv`). Občas očekávaly nějaký standardní vstup poslaný rourou z jiného příkazu (např. `tr`) a jejich chování se obvykle řídilo parametry příkazové řádky.
+Většina příkazů, které jsme si ukázali, pracovala v režimu standardního textového vstupu a výstupu. Většinou něco vypsaly na terminál - `ls`, `pwd` - nebo něco udělaly - `cd`, `cp`, `mv`. Občas očekávaly nějaký standardní vstup poslaný rourou z jiného příkazu (např. `tr`) a jejich chování se obvykle řídilo parametry příkazové řádky.
 
 Výjimku v tomto měly nástroje `less` a `man`, které zabraly celé dostupné okno terminálu a zobrazily na něj soubor nebo manuálovou stránku. Program `less` nám však dovoloval pouze soubor prohlížet. Pokud bychom potřebovali nějaký soubor upravit, popř. vytvořit nový soubor s nějakým obsahem, budeme potřebovat textový editor.
 

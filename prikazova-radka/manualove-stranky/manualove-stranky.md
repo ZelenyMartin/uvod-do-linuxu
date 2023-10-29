@@ -4,7 +4,7 @@ Pokud se vám už ze všech příkazů a jejich parametrů točí hlava, v této
 
 Pokud se vám zatím zdá, že práce v linuxové příkazové řádce spočívá především v tom pamatovat si všechny příkazy a všechny jejich parametry, ujistím vám, že tak to rozhodně není. Příkazů v Linuxu existuje nesmírně velké množství a s každou novou verzí nějaké distribuce přichází nové programy a naopak zastaralé programy se přestávají používat.
 
-Abychom v tom všem měli přehled, velká většina příkazů má i svou vlastní manuálovou stránku. Manuál zobrazíme programem `man`. Doposud všechny příkazy, které jsme zkoušeli, fungovaly tak, že něco udělaly (např. `cp`, `mv`, `mkdir`) popř. něco vypsaly na terminál (`ls`, `pwd`). Program `man` funguje tak, že na celé okno terminálu zobrazí příslušnou manuálovou stránku a náš důvěrně známý prompt nám zmizí.
+Abychom v tom všem měli přehled, velká většina příkazů má i svou vlastní manuálovou stránku. Manuál zobrazíme programem `man`. Doposud všechny příkazy, které jsme zkoušeli, fungovaly tak, že něco udělaly (např. `cp`, `mv`, `mkdir`) popř. něco vypsaly na terminál - `ls`, `pwd`. Program `man` funguje tak, že na celé okno terminálu zobrazí příslušnou manuálovou stránku a náš důvěrně známý prompt nám zmizí.
 
 Vyzkoušejte si zobrazit manuálovou stránku některého příkazu, který jsme si dosud ukázali, např.
 
