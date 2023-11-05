@@ -68,35 +68,35 @@ Pokud bychom chtěli původní obsah souboru zachovat a zapsat nový text až na
 
 ## Přehlednější zobrazení souboru
 
-Vrátíme-li se k příkladu vypsání obsahu souboru `lesson.md`, uvidíme, že pokud je počet řádků souboru větší než výška našeho terminálu, musíme na začátek souboru scrollovat kolečkem. Někdy je tento způsob dost nepřehledný, protože se nám začátek textového souboru vizuálně smísí s předchozím textem v našem terminálu a nevidíme pořádně, kde soubor vlastně začíná.
+Vrátíme-li se k příkladu vypsání obsahu souboru `specifikace-cesty.md`, uvidíme, že pokud je počet řádků souboru větší než výška našeho terminálu, musíme na začátek souboru scrollovat kolečkem. Někdy je tento způsob dost nepřehledný, protože se nám začátek textového souboru vizuálně smísí s předchozím textem v našem terminálu a nevidíme pořádně, kde soubor vlastně začíná.
 
 Abychom si pomohli, představíme si další příkazy pro prohlížení souborů.
 
 ```shell
-$ head lesson.md
+$ head specifikace-cesty.md
 ```
 
 Příkaz `head` vypíše začátek souboru. Ve výchozím nastavení vypisuje prvních 10 řádků souboru. Toto je možné upravit parametrem `-n`.
 
 ```shell
-$ head -n 5 lesson.md
+$ head -n 5 specifikace-cesty.md
 ```
 
 Podobně funguje příkaz `tail`, který naopak vypisuje poslední řádky souboru.
 
 
 ```shell
-$ tail lesson.md
+$ tail specifikace-cesty.md
 ```
 
 ```shell
-$ tail -n 5 lesson.md
+$ tail -n 5 specifikace-cesty.md
 ```
 
 Posledním hezkým nástrojem pro zobrazení souboru je program `less`. Tento příkaz, podobně jako program `man`, funguje interaktivně a na celý terminál nám zobrazí obsah souboru. Také nám umožní souborem procházet pomocí šipky nahoru a dolu a kláves :kbd[Home] a :kbd[End]. Neméně důležitou funkcionalitou je interaktivní vyhledávání, které spustíme klávesou lomítko :kbd[/], na další výskyt vyhledávaného textu se posuneme klávesou :kbd[n] a na předchozí výskyt velkým :kbd[N]. Program `less` ukončíme opět klávesou :kbd[q].
 
 ```shell
-$ less lesson.md
+$ less specifikace-cesty.md
 ```
 
 ## Další nejzákladnější příkazy nad soubory
@@ -116,7 +116,7 @@ Grep budeme používat s dvěma hlavními parametry, a to jako první parametr h
 Při ukázce použití programu `grep` se vrátíme ke zdrojovému kódu lekce ve formátu Markdown. Markdown formátování kapitol začíná znakem _hash_ `#` (a nadpis druhé úrovně je vyjádřen dvěma mřížkami `##`). Pozor: hledaný text `##` zde musíme uzavřít do uvozovek (jedno jestli jednoduchých nebo dvojitých). V linuxovém shellu je znak `#` považován za začátek komentáře, a tak by se nám zbytek příkazu ignoroval. Komentáře se tedy zapisují stejně jako např. v jazyce Python.
 
 ```shell
-$ grep '##' lesson.md
+$ grep '##' specifikace-cesty.md
 ## Specifikace cesty
 ## Vyhledávání souborů
 ## Stažení a rozbalení pracovních dat
@@ -133,13 +133,13 @@ Program `grep` má také mnoho užitečných přepínačů. Např. `grep -i` ign
 Druhý příkaz, který si ukážeme je program `wc`. Za vtipnou zkratkou se skrývá Word Count. Zavoláme-li příkaz s názvem souboru, vypíší se nám 3 čísla. V manuálové stránce zjistíme, že se jedná o počet řádků, slov a velikost souboru v bytech. Velikost souboru ukazuje i příkaz `ls -l`. Místo trojice čísel je však vhodnější znát jen jednu konkrétní hodnotu. Nejčastěji se příkaz používá jako `wc -l`, které vypíše počet řádků.
 
 ```shell
-$ wc lesson.md
-  88  414 3163 lesson.md
+$ wc specifikace-cesty.md
+  88  414 3163 specifikace-cesty.md
 ```
 
 ```shell
-$ wc -l lesson.md
-88 lesson.md
+$ wc -l specifikace-cesty.md
+88 specifikace-cesty.md
 ```
 
 ## Nejdůležitější znak v terminálu je |
@@ -151,23 +151,23 @@ Většina příkazů, která akceptuje jako svůj parametr název souboru, toti�
 Příklad vydá za tisíc slov
 
 ```shell
-$ grep '##' lesson.md | wc -l
+$ grep '##' specifikace-cesty.md | wc -l
 4
 ```
 
-Příkaz `grep '##' lesson.md` samotný by nám vypsal v tomto případě 4 řádky. Pokud tyto řádky pošleme spočítat příkazem `wc -l`, vypíše se nám číslo _4_.
+Příkaz `grep '##' specifikace-cesty.md` samotný by nám vypsal v tomto případě 4 řádky. Pokud tyto řádky pošleme spočítat příkazem `wc -l`, vypíše se nám číslo _4_.
 
 Zkusme to zkombinovat s tím co už známe. Vypiš první kapitolu:
 
 ```shell
-$ grep '##' lesson.md | head -n 1
+$ grep '##' specifikace-cesty.md | head -n 1
 ## Specifikace cesty
 ```
 
 Vypiš poslední kapitolu:
 
 ```shell
-$ grep '##' lesson.md | tail -n 1
+$ grep '##' specifikace-cesty.md | tail -n 1
 ## Příklady použití příkazu find
 ```
 
