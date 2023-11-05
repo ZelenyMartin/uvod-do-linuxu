@@ -21,7 +21,7 @@ Pro stažení souboru [data.zip](assets/data.zip), který je uložen někde na w
 
 
 ```shell
-$ wget https://kodim.cz/cms/assets/devops/uvod-do-linuxu/prikazova-radka/specifikace-cesty/data.zip
+$ wget https://kodim.cz/cms/assets/devops/uvod-do-linuxu/prikazova-radka/specifikace-cesty/vyhledavani-souboru/data.zip
 ```
 
 Následně si soubor s příponou `.zip` rozbalíme. Použijeme k tomu program `unzip`.

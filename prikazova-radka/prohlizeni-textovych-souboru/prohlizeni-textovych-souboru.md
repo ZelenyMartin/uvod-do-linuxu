@@ -18,8 +18,8 @@ Název příkazu `cat` nemá nic společného s kočkou. Jedná se o zkratku ang
 Pro ukázku, k čemu je to dobré, si stáhněme další testovací soubory [data1.txt](assets/data1.txt) a [data2.txt](assets/data1.txt) pomocí nástroje `wget`.
 
 ```shell
-$ wget https://kodim.cz/cms/assets/devops/uvod-do-linuxu/prikazova-radka/prohlizeni-textovych-souboru/data1.txt
-$ wget https://kodim.cz/cms/assets/devops/uvod-do-linuxu/prikazova-radka/prohlizeni-textovych-souboru/data2.txt
+$ wget https://kodim.cz/cms/assets/devops/uvod-do-linuxu/prikazova-radka/prohlizeni-textovych-souboru/prohlizeni-textovych-souboru/data1.txt
+$ wget https://kodim.cz/cms/assets/devops/uvod-do-linuxu/prikazova-radka/prohlizeni-textovych-souboru/prohlizeni-textovych-souboru/data2.txt
 ```
 
 Jednotlivě si zobrazme obsahy souborů.
