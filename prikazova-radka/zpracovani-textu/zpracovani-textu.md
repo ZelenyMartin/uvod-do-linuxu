@@ -2,10 +2,10 @@ V této kapitole se vrhneme na pokročilejší zpracování textových souborů.
 
 ## Řazení řádků a zpracování duplicit
 
-Pro další práci si stáhneme nová pracovní data
+Pro další práci si stáhneme nová pracovní data [names.txt](assets/names.txt).
 
 ```shell
-$ wget https://kodim.cz/cms/assets/kurzy/uvod-do-linuxu/prikazova-radka/zpracovani-textu/names.txt
+$ wget https://kodim.cz/cms/assets/devops/uvod-do-linuxu/prikazova-radka/zpracovani-textu/names.txt
 ```
 
 Využijme známé příkazy, abychom se s daty seznámili: `head`, `tail`, `wc -l`, `cat`, `less`
@@ -113,10 +113,10 @@ $ sort names.txt | uniq -c | sort -n | tail
 
 ## Nahrazování v textu
 
-Další pracovní soubor obsahuje jména i příjmení.
+Další pracovní soubor [fullnames.txt](assets/fullnames.txt) obsahuje jména i příjmení.
 
 ```shell
-$ wget https://kodim.cz/cms/assets/kurzy/uvod-do-linuxu/prikazova-radka/zpracovani-textu/fullnames.txt
+$ wget https://kodim.cz/cms/assets/devops/uvod-do-linuxu/prikazova-radka/zpracovani-textu/fullnames.txt
 ```
 
 ### tr
