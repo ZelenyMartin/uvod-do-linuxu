@@ -15,7 +15,7 @@ $ cat specifikace-cesty.md
 
 Název příkazu `cat` nemá nic společného s kočkou. Jedná se o zkratku anglického výrazu _concatenate_, což znamená pospojovat nebo zřetězit. Příkaz `cat` umí nejen vypsat jeden soubor, ale všechny soubory, které jsou mu předány jako parametry příkazové řádky.
 
-Pro ukázku, k čemu je to dobré, si stáhněme další testovací soubory [data1.txt](assets/data1.txt) a [data2.txt](assets/data1.txt) pomocí nástroje `wget`.
+Pro ukázku, k čemu je to dobré, si stáhněme další testovací soubory [data1.txt](assets/data1.txt) a [data2.txt](assets/data2.txt) pomocí nástroje `wget`.
 
 ```shell
 $ wget https://kodim.cz/cms/assets/devops/uvod-do-linuxu/prikazova-radka/prohlizeni-textovych-souboru/prohlizeni-textovych-souboru/data1.txt
