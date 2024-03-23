@@ -14,7 +14,7 @@ Než se vrhneme na příkazy povíme si něco o velmi důležitých klávesách,
 
 ## První příkazy
 
-:::warn
+:::box{type=warning}
 Symbol dolaru na začátku příkazu se do terminálu nepíše. Jedná se o všeobecně rozšířenou konvenci v psaní návodů a dokumentace, abychom odlišili, že se jedná o příkaz v terminálu.
 :::
 

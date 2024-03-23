@@ -55,7 +55,7 @@ $ cat data*
 
 Pomocí znaku "větší než", který si nyní představme jako šipku, můžeme výpis přesměrovat do nového souboru, který si pojmenujeme např. `data_all.txt`.
 
-:::warn
+:::box{type=warning}
 Pokud by náhodou soubor `data_all.txt` už existoval, bude jeho obsah následujícím příkazem nemilosrdně bez jakékoliv ujišťujícího dotazu přepsán.
 :::
 

@@ -1,6 +1,6 @@
 I když se jedná o workshop o Linuxu, pravděpodobně většina z vás přichází s operačním systémem Windows. Abychom však mohli pracovat s linuxovou příkazovou řádkou, potřebujeme ji mít k dispozici na našem počítači. Způsobem, jak toho můžeme snadno dosáhnout, je použití vestavěné funkcionality operačního systému Windows s názvem _Windows Subsystem for Linux (WSL)_.
 
-:::warn
+:::box{type=warning}
 Je nezbytné mít nejaktuálnější updatované Windows. Na starších Windows než Windows 10 není funkcionalita _WSL_ přítomna.
 :::
 
@@ -32,7 +32,7 @@ Pokud by se vám z jakéhokoliv důvodu nepodařilo nainstalovat WSL2 pomocí p�
 
 1. Po prvním spuštění distribuce vyžaduje vytvoření uživatele s heslem.
 
-    :::warn
+    :::box{type=warning}
     Psaní hesla v linuxovém terminálu neposkytuje žádnou vizuální odezvu (žádné `*` nebo •). To, že se nic nezobrazuje, když zadáváte heslo, je účel.
     :::
 
