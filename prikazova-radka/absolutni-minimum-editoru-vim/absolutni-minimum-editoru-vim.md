@@ -10,7 +10,7 @@ Editor VIM je profesionální nástroj a je nutné věnovat určitý čas nauče
 
 Běžné textové editory obsahují jediný mód použití, a to režim vkládání textu (zmáčknutá posloupnost písmen daný text napíše do okna editoru). O pohyb kurzoru se v běžných editorech starají kurzorové šipky, navigační blok :kbd[Home], :kbd[End], :kbd[PageUP], :kbd[PageDown], popř. ještě s klávesou :kbd[Ctrl]. Mnoho činností lze vykonat pomocí myši.
 
-Editor VIM vznikl jako následovník staršího editoru Vi, který se používal na UNIXových systémech vybavených monitorem. Klávesnice u terminálů tehdy běžně neměly kurzorové šipky ani navigační klávesy. Proto vznikl editor, která má oddělené režimy vkládání textu od režimu pohybu kurzoru a manipulace s textem.
+Editor VIM vznikl jako následovník staršího editoru Vi, který se používal na UNIXových systémech vybavených monitorem. Klávesnice u terminálů tehdy běžně neměly kurzorové šipky ani navigační klávesy. Proto vznikl editor, který má oddělené režimy vkládání textu od režimu pohybu kurzoru a manipulace s textem.
 
 U vimu rozlišujeme 3 hlavní režimy práce:
 
